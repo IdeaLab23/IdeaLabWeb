@@ -3,14 +3,7 @@ const Page1 = () => {
   return (
     <div>
         <div>
-          <div className="-z-10 fixed w-full h-full">
-            <Image
-              src="/bg.jpg"
-              alt="bg"
-              layout="fill"
-              objectFit="cover"
-              />
-          </div>
+          
           <div>
             <div className="flex items-center">
               <div className="ms-16 pt-4">

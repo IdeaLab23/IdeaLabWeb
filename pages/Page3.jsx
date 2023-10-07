@@ -5,9 +5,17 @@ import Page3Comp2 from "./Page3Comp2"
 const Page3 = () => {
     const text = "Lorem ipsum sit amet ctetudbt adipisicing elit. Veritatis animi nisi vitae?"
   return (
-    <div className="mt-24">
+    <div className="pt-24 pb-10 bg-black">
+        <div className="z-0 absolute w-[400px] h-full rotate-180 right-0 top-[110rem]">
+            <Image
+                src="/Ellipse-6.png"
+                alt="okrf"
+                layout="fill"
+                objectFit="cover"
+            />
+        </div>
         <div className="w-[45rem] ms-56">
-            <h3 className="text-slate-200 font-mono text-lg">Feature</h3>
+            <h3 className="text-slate-200 font-mono text-lg">What we Offer</h3>
             <h1 className="text-[3rem] font-bold font-mono mt-4 text-white leading-[4rem]">Empowering Industries <br/> with Intelligent Automation</h1>
         </div>
         <div className="flex place-content-center items-center gap-14">

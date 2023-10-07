@@ -10,7 +10,7 @@ const Page2Comp = (props) => {
           width={70}
           height={1}
         />
-        <h2 className="text-3xl my-7">{props.title}</h2>
+        <h2 className="text-4xl font-bold my-7">{props.title}</h2>
         <p className="text-slate-200">{props.text}</p>
       </div>
     </div>
