@@ -7,7 +7,7 @@ const Page2 = () => {
   const text3 = "At IDEALab, we believe that innovation thrives when it meets the real world. Our community fosters projects that don't just stay on paper or screens; they leap into action, shaping the future. "
   return (
     <div className="bg-black">
-      <div className="z-0 absolute w-[400px] h-full">
+      <div className="z-0 absolute top-[55rem] w-[400px] h-full">
         <Image 
           src="/Ellipse-6.png"
           alt="rfe"

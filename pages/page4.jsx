@@ -8,7 +8,7 @@ const data=
   ]
   return (
     <div className="bg-black pt-14">
-      <div className="z-0 absolute w-[300px] h-full">
+      <div className="z-0 absolute right-0 top-[250rem] rotate-180 w-[300px] h-full">
         <Image 
           src="/Ellipse-6.png"
           alt="tgf"
@@ -16,7 +16,7 @@ const data=
           objectFit="cover"
         />
       </div>
-      <h3 className="text-slate-200 font-mono ms-56 text-lg">OUR  SERVICES</h3>
+      <h3 className="text-slate-200 font-mono ms-56 text-lg">OUR SERVICES</h3>
       <div className="flex">
           <h1 className="text-[2.4rem] font-bold font-mono text-white leading-[4rem] ms-56">Revolutionize Your Industry with<br/>  AI and Robotics</h1>
           <button className="w-52 h-14 bg-[#7B8CE5] rounded-full text-white ms-64 text-lg font-mono hover:bg-white hover:text-[#7B8CE5]">Discover More</button>  

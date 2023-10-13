@@ -13,7 +13,7 @@ const Page3 = () => {
     const network = "Students can connect with other like-minded peers and potential collaborators, helping them to build a network of resources and support."
   return (
     <div className="pt-24 pb-10 bg-black">
-        <div className="z-0 absolute w-[400px] h-full rotate-180 right-0 top-[110rem]">
+        <div className="z-0 absolute w-[400px] h-full rotate-180 right-0 top-[115rem]">
             <Image
                 src="/Ellipse-6.png"
                 alt="okrf"
@@ -39,7 +39,7 @@ const Page3 = () => {
                 <Page3Comp1 title="Training and Workshops" text={training}/>
             </div>
         </div>
-        <div className="flex justify-center gap-6 mt-14 mb-20">
+        <div className="flex justify-center gap-6 mt-28 mb-32">
             <Page3Comp2 title="64K+" text="Success Projects" />
             <div className="w-[275px] h-[266px] flex flex-col justify-center bg-[#7B8CE5]">
                 <p className="text-6xl font-mono text-white text-center ">54+</p>
@@ -47,6 +47,14 @@ const Page3 = () => {
             </div>
             <Page3Comp2 title="36K+" text="Satidifed Clients" />
             <Page3Comp2 title="25+" text="Awards Winning" />
+        </div>
+        <div className="z-0 absolute w-[400px] h-full top-[185rem]">
+            <Image
+                src="/Ellipse-6.png"
+                alt="okrf"
+                layout="fill"
+                objectFit="cover"
+            />
         </div>
         <div className="flex justify-evenly">
         <div className="text-white">
@@ -58,6 +66,7 @@ const Page3 = () => {
           src="/man_inside.jpg"
           alt="Can't Load"
           width={450}
+          className="w-[550px] h-[600px] mt-10"
           height={100}
         />
     </div>

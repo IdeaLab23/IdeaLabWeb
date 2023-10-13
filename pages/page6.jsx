@@ -2,8 +2,8 @@ import Image from "next/image"
 
 const page6 = () => {
   return (
-    <div className="pt-48 pb-32 text-center text-white bg-black justify-center">
-      <div className="z-0 absolute top-[324.3rem] w-full h-[300px]">
+    <div className="pt-48 pb-20 text-center text-white bg-black justify-center">
+      <div className="z-0 absolute right-0 top-[326.6rem] w-full h-[300px]">
         <Image 
           src="/Ellipse-BG.png"
           alt="rfe"
