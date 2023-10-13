@@ -12,7 +12,7 @@ const Page3Comp1 = (props) => {
                 />
             <h2 className="text-white font-bold font-mono text-3xl">{props.title}</h2>
         </div>
-        <p className="text-slate-200 w-[22rem] ms-14 text-lg mt-6">{props.text}</p>
+        <p className="text-slate-200 w-[30rem] text-justify ms-14 text-lg mt-6">{props.text}</p>
     </div>
   )
 }

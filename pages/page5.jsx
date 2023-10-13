@@ -21,12 +21,12 @@ const Page5 = () => {
             <Page5Comp1 title="Robotics System Integration" text={text} />
             <Page5Comp1 title="Cutting-Edge Technologies" text={text} />
         </div>
-      <Image 
-        src="/man_inside.jpg"
-        alt="Can't Load"
-        width={500}
-        height={150}
-      />
+        <Image 
+          src="/man_inside.jpg"
+          alt="Can't Load"
+          width={500}
+          height={150}
+        />
       </div>
   </div>
   )

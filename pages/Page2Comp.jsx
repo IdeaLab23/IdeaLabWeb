@@ -11,7 +11,7 @@ const Page2Comp = (props) => {
           height={1}
         />
         <h2 className="text-4xl font-bold my-7">{props.title}</h2>
-        <p className="text-slate-200">{props.text}</p>
+        <p className="text-slate-200 text-lg">{props.text}</p>
       </div>
     </div>
   )
