@@ -20,7 +20,6 @@ const Page1 = () => {
                 <button className="w-52 h-14 bg-[#7B8CE5] rounded-full text-lg font-mono hover:bg-white hover:text-[#7B8CE5]">Discover More</button>
             </div>
             <div className="mt-14">
-              
                 <Image
                     src="/robo.png"
                     alt="robo"

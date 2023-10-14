@@ -1,18 +1,19 @@
-import Page1 from "@/pages/Page1"
-import Page2 from "@/pages/Page2"
-import Page3 from "@/pages/Page3"
-import Page4 from "@/pages/page4"
+import HomePage from "@/pages/HomePage"
+import AboutUs from "@/pages/AboutUs"
+import Offer from "@/pages/Offer"
+import Facilities from "@/pages/Facilities"
 import Page6 from "@/pages/page6"
+import Contact from "@/pages/Contact"
 
 
 export default function Home() {
   return (
     <>
-      <Page1 />
-      <Page2 />
-      <Page3 />
-      <Page4 />
-      <Page6 />
+      <HomePage />
+      <AboutUs />
+      <Offer />
+      <Facilities />
+      <Contact />
     </>
   )
 }
