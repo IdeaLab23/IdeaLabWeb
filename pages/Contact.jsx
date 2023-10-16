@@ -34,7 +34,7 @@ const Contact = () => {
               <label htmlFor="web" className="font-mono text-2xl">App Developer : </label>
               <select name="" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem]">
                 <option value="frontend">None</option>
-                <option value="frontend">Mobile Developer</option>
+                <option value="frontend">Android Developer</option>
                 <option value="backend">IOS Developer</option>
               </select>
             </div>
