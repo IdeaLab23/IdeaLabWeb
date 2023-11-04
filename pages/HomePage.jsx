@@ -3,7 +3,7 @@ import Navbar from "@/pages/Navbar"
 const Page1 = () => {
   return (
     <>
-    <div className="-z-10 absolute w-full h-[1120px]">
+    <div className="-z-10 absolute w-full h-[1120px] max-sm:w-[920px]">
       <Image
         src="/bg.jpg"
         alt="bg"

@@ -1,6 +1,6 @@
-import Services_comp from "./services_comp"
+import FacilitiesComp from "./FacilitiesComp"
 import Image from "next/image"
-const Page4 = (props) => {
+const Page4 = () => {
 const data=
   [
     "Augue congue turpis ut purus ut nibh sit. Et consectetur elit volutpat blandit sed facilisis. At in orci vel a vestibulum egestas. Ut faucibus.",
@@ -22,14 +22,14 @@ const data=
           <button className="w-52 h-14 bg-[#7B8CE5] rounded-full text-white ms-64 text-lg font-mono hover:bg-white hover:text-[#7B8CE5]">Discover More</button>  
       </div>
       <div className="flex justify-center gap-7 my-14 mr-13">
-          <Services_comp title="Automation"  description={data[0]} img_path="/auto.png"/>
-          <Services_comp title="Construction" description={data[0]} img_path="/pre.png"/>
-          <Services_comp title="Manufacturing" description={data[0]}img_path="/manu.png"/>
+          <FacilitiesComp title="Automation"  description={data[0]} img_path="/auto.png"/>
+          <FacilitiesComp title="Construction" description={data[0]} img_path="/pre.png"/>
+          <FacilitiesComp title="Manufacturing" description={data[0]}img_path="/manu.png"/>
       </div>
       <div className="flex justify-center gap-7 mr-13">
-        <Services_comp title="Public Safety " description={data[0]} img_path="/safety.png"/>
-        <Services_comp title="Power Utilities" description={data[0]} img_path="/drill.png"/>
-        <Services_comp title="Management" description={data[0]} img_path="/pre.png"/>
+        <FacilitiesComp title="Public Safety " description={data[0]} img_path="/safety.png"/>
+        <FacilitiesComp title="Power Utilities" description={data[0]} img_path="/drill.png"/>
+        <FacilitiesComp title="Management" description={data[0]} img_path="/pre.png"/>
       </div> 
     </div>
   )

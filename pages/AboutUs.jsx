@@ -1,5 +1,6 @@
 import Image from "next/image"
 import AboutComp from "./AboutComp"
+import Link from "next/link"
 
 const Page2 = () => {
   const text1 = "Idea Development: IDEALab nurtures your ideas, guiding them from start to finish. With expert support, cutting-edge resources, and a collaborative environment, your visionary innovations become reality."

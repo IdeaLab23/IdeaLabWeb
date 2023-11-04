@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-const Services_comp = (props) => {
+const FacilitiesComp = (props) => {
   return (
   <div className="p-10 text-white hover:bg-[#1B255E] w-96 h-96 bg-[#151721]"> 
       <Image 
@@ -15,4 +15,4 @@ const Services_comp = (props) => {
     )
 }
 
-export default Services_comp
+export default FacilitiesComp
