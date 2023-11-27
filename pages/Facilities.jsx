@@ -14,6 +14,7 @@ const data=
           alt="tgf"
           layout="fill"
           objectFit="cover"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
       <h3 className="text-slate-200 font-mono ms-56 text-lg max-sm:ms-[20rem] max-sm:text-5xl ">Our Facilities</h3>

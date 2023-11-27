@@ -9,6 +9,7 @@ const Page3Comp1 = (props) => {
                 alt="chip"
                 width={40}
                 height={1}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
             <h2 className="text-white font-bold font-mono text-3xl max-sm:text-6xl max-sm:my-9 ">{props.title}</h2>
         </div>

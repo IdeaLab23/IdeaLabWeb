@@ -19,6 +19,7 @@ const Page3 = () => {
                 alt="okrf"
                 layout="fill"
                 objectFit="cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
         </div>
         <div className="w-[45rem] ms-56 max-sm:w-[55rem] max-sm:text-center max-sm:ms-16 ">
@@ -31,6 +32,7 @@ const Page3 = () => {
                 alt="hand"
                 width={700}
                 height={1}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <div>      
                 <OfferComp1 title="Innovation Nurturing" text={innovation}/>
@@ -53,6 +55,7 @@ const Page3 = () => {
                 alt="okrf"
                 layout="fill"
                 objectFit="cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
         </div>
     <div className="flex justify-evenly max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-[62rem] ">
@@ -65,6 +68,7 @@ const Page3 = () => {
           src="/man_inside.jpg"
           alt="Can't Load"
           width={500}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           height={1}
         />
     </div>

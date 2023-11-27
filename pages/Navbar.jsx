@@ -13,6 +13,7 @@ const Page1 = () => {
             alt="logo"
             layout="fill"
             objectFit="cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
         <h3 className="text-white text-xl ms-48 mt-3 max-sm:text-[2.6rem] max-sm:leading-normal max-sm:ms-60">AICTE IDEA Lab LNCT</h3>

@@ -8,6 +8,7 @@ const Services_comp = (props) => {
       alt="Can't Load"
       width={70}
       height={50}  
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     />
     <span className="font-bold p-2 block text-2xl max-sm:text-5xl max-sm:pt-9 ">{props.title}</span>
     <span className=" p-2 block text-lg max-sm:text-4xl max-sm:text-center max-sm:leading-normal max-sm:my-6 ">{props.description}</span>

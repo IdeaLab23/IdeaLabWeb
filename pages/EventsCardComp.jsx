@@ -11,7 +11,11 @@ const EventsCardComp = () => {
         </div>
         <p className="text-xl pb-4">Lorem ipsum dolor sit amet cons ecte tur adipi si cing elit. Labo riosam, mini ma.</p>
         <Image
-          src="/roboHand.jpg" width={500} alt="Image" height={10}
+          src="/roboHand.jpg" 
+          width={500} 
+          alt="Image" 
+          height={10}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
         <div className="flex justify-between font-bold p-3 text-lg ">
           <span>21 Seats left</span>

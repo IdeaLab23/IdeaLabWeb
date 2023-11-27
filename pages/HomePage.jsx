@@ -8,6 +8,7 @@ const Page1 = () => {
         src="/bg.jpg"
         alt="bg"
         layout="fill"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         objectFit="cover"
         />
     </div>
@@ -25,6 +26,7 @@ const Page1 = () => {
               alt="robo"
               layout="fill"
               objectFit="cover"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
         </div>
       </div>

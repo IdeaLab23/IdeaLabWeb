@@ -8,6 +8,7 @@ const Page3Comp1 = (props) => {
                 src="/processor.png"
                 alt="chip"
                 width={40}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 height={1}
                 />
             <h2 className="text-white font-bold font-mono text-3xl max-sm:text-6xl max-sm:-ms-48 max-sm:my-9 ">{props.title}</h2>
