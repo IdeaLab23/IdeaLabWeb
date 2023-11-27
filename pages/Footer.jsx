@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
         <footer className='bg-black'>
-            <div className="flex flex-wrap justify-between pt-16 pb-8 ps-24 max-sm:w-[60rem] max-sm:pt-0 ">
+            <div className="flex flex-wrap justify-between pt-16 pb-8 ps-24 max-sm:w-[60rem] min-[550px]:pt-24 ">
                 <div className="w-[20rem] max-sm:-[30rem] ">
                     <h3 className="text-3xl text-white font-bold max-sm:text-[3.5rem] ">Address</h3>
                     <div className="pt-6 text-lg font-medium text-[#959595] hover:text-slate-200 hover:cursor-pointer max-sm:text-4xl max-sm:leading-normal max-sm:py-10 ">

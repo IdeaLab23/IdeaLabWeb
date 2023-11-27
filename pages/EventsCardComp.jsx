@@ -7,15 +7,15 @@ const EventsCardComp = () => {
       <div className="ml-3">
         <div className="flex justify-between font-bold text-lg ">
           <span >Q and A</span>
-          <span >7:00  to 9:00</span>
+          <span >7:00 to 9:00</span>
         </div>
-        <p className="text-xl pb-4">Lorem ipsum dolor sit amet cons ecte tur adipi si cing elit. Labo riosam,  mini ma.</p>
+        <p className="text-xl pb-4">Lorem ipsum dolor sit amet cons ecte tur adipi si cing elit. Labo riosam, mini ma.</p>
         <Image
           src="/roboHand.jpg" width={500} alt="Image" height={10}
         />
         <div className="flex justify-between font-bold p-3 text-lg ">
           <span>21 Seats left</span>
-          <button className='border-2 rounded w-24 bg-indigo-950 p-1'>Sign Up</button>
+          <button className='border-2 rounded w-24 bg-[#111827] p-1 hover:bg-indigo-900 '>Sign Up</button>
         </div>
       </div>
     </div>
