@@ -2,7 +2,7 @@ import Image from "next/image"
 const EventsCardComp = () => {
   return (
     <>
-    <div className="flex p-5 max-sm:p-3 ">
+    <div className="flex p-5">
       <span className='border-2 rounded-xl w-36 h-20 border-color: rgb(161 161 170) flex flex-col justify-center text-center font-bold p-4 '>April 14</span>
       <div className="ml-3">
         <div className="flex justify-between font-bold text-lg ">
