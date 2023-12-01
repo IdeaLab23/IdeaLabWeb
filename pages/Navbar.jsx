@@ -49,7 +49,7 @@ const Page1 = () => {
             <Link href="#facilities">Our Facilities</Link>
           </p>
           <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto">
-            <Link href="/">Gallery</Link>
+            <Link href="/Gallery">Gallery</Link>
           </p>
           <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto">
             <Link href="/Events">Events</Link>
@@ -76,7 +76,7 @@ const Page1 = () => {
           </p>
           <hr className="w-[87%]"/>
           <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-8">
-            <Link href="/">Gallery</Link>
+            <Link href="/Gallery">Gallery</Link>
           </p>
           <hr className="w-[87%]"/>
           <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-8">

@@ -11,11 +11,15 @@
   "dependencies": {
     "next": "^14.0.3",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-photo-album": "^2.3.0",
+    "yet-another-react-lightbox": "^3.15.4"
   },
   "devDependencies": {
+    "@types/react": "18.2.39",
     "autoprefixer": "latest",
     "postcss": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "typescript": "5.3.2"
   }
 }
