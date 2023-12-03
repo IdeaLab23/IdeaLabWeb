@@ -13,7 +13,7 @@ const Contact = () => {
         />
       </div>
         <h3 className='text-7xl font-[Montserrat] w-[60rem] leading-normal max-sm:leading-tight ps-24 max-sm:text-center max-sm:text-[7.9rem] '>We can't wait to hear your ideas! Contact us.</h3>
-        <form action="/" method="post">
+        <form action="/contact" method="POST">
           <div className="flex flex-wrap justify-between ps-24 pt-10 max-sm:flex-col max-sm:items-center max-sm:ps-7 ">
             <div className="w-[52rem] max-sm:w-[45rem] ">
               <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " type="text" placeholder="First Name*" />

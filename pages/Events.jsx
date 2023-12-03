@@ -1,7 +1,17 @@
+"use client"
 import '../app/globals.css'
 import Link from "next/link"
+import data from './data'
 import EventsCardComp from './EventsCardComp'
 const Events = () => {
+  const events = data.map(item => {
+    return (
+      <EventsCardComp 
+        key={item.id}
+        {...item}
+      />
+    )
+  })
   return ( 
     <div className="bg-gray-900 text-white h-max w-fit ">   
       <div className='flex justify-between items-center max-sm:flex-wrap max-sm:w-[35rem] '>
@@ -10,10 +20,8 @@ const Events = () => {
           <Link href="/" >Home</Link>
         </button> 
       </div>
-      <div className='flex max-sm:flex-wrap'>
-          <EventsCardComp/>
-          <EventsCardComp/>
-          <EventsCardComp/>
+      <div className='flex flex-wrap'>
+          {events}
       </div>
       <h1 className="text-4xl font-mono p-7">Past Events</h1>
       <div className='flex max-sm:flex-wrap'>
