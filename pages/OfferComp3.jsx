@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 
 const Page3Comp1 = (props) => {
   return (
@@ -7,9 +7,8 @@ const Page3Comp1 = (props) => {
             <Image className="max-sm:w-[7rem] max-sm:h-[7rem]"
                 src="/processor.png"
                 alt="chip"
-                width={40}
-                height={1}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                width="40px"
+                height="40px"
                 />
             <h2 className="text-white font-bold font-mono text-3xl max-sm:text-6xl max-sm:my-9 ">{props.title}</h2>
         </div>

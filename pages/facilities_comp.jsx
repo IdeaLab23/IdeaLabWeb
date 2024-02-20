@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 
 const Services_comp = (props) => {
   return (
@@ -6,12 +6,11 @@ const Services_comp = (props) => {
     <Image className="max-sm:w-[7rem] max-sm:h-[7rem]"
       src={props.img_path}
       alt="Can't Load"
-      width={70}
-      height={50}  
-      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+      width="70px"
+      height="70px"
     />
-    <span className="font-bold p-2 block text-2xl max-sm:text-5xl max-sm:pt-9 ">{props.title}</span>
-    <span className=" p-2 block text-lg max-sm:text-4xl max-sm:text-center max-sm:leading-normal max-sm:my-6 ">{props.description}</span>
+    <span className="font-bold py-2 block text-2xl max-sm:text-5xl max-sm:pt-9 ">{props.title}</span>
+    <span className=" py-2 block text-lg max-sm:text-4xl max-sm:text-center max-sm:leading-normal max-sm:my-6 ">{props.description}</span>
     <button className="font-bold text-[#7B86E5] max-sm:text-3xl ">Learn More</button>
   </div>
   )

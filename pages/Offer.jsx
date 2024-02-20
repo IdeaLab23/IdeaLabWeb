@@ -1,10 +1,9 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 import OfferComp1 from "./OfferComp1"
 import OfferComp2 from "./OfferComp2"
 import OfferComp3 from "./OfferComp3"
 
 const Page3 = () => {
-    const text = "jdjk"
     const innovation = "AICTE IdeaLab may offer incubation support for student startups. This includes physical office space, infrastructure, and mentorship to help students develop their business ideas and products."
     const mentor = "Students may receive mentorship from experienced entrepreneurs, industry experts, and professors to guide them through the various stages of ideation, prototyping, and scaling their ventures."
     const training = "AICTE IdeaLab may organize workshops, training sessions, and boot camps to equip students with the necessary skills and knowledge to run a successful business."
@@ -30,9 +29,8 @@ const Page3 = () => {
             <Image className="max-sm:w-[40rem] max-sm:h-[30rem] max-sm:-ms-6 "
                 src="/roboHand.jpg"
                 alt="hand"
-                width={700}
-                height={1}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                width="640px"
+                height="450px"
             />
             <div>      
                 <OfferComp1 title="Innovation Nurturing" text={innovation}/>
@@ -67,9 +65,8 @@ const Page3 = () => {
         <Image className="max-sm:w-[45rem] max-sm:h-[50rem] max-sm:ms-5 max-sm:my-10"
           src="/man_inside.jpg"
           alt="Can't Load"
-          width={500}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          height={1}
+          width="640px"
+          height="450px"
         />
     </div>
     </div>

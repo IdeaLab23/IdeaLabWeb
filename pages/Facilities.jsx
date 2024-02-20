@@ -1,6 +1,6 @@
 import Facilities_comp from "./facilities_comp"
-import Image from "next/image"
-const Page4 = (props) => {
+import Image from "next/legacy/image"
+const Page4 = () => {
 const data=
   [
     "Augue congue turpis ut purus ut nibh sit. Et consectetur elit volutpat blandit sed facilisis. At in orci vel a vestibulum egestas. Ut faucibus.",

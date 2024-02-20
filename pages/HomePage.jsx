@@ -1,5 +1,5 @@
 "use client"
-import Image from "next/image"
+import Image from "next/legacy/image"
 import Navbar from "@/pages/Navbar"
 import React from "react"
 const Page1 = () => {
@@ -12,7 +12,6 @@ const Page1 = () => {
         alt="bg"
         layout="fill"
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        objectFit="cover"
       />
     </div>
     <Navbar />
