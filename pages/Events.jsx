@@ -25,9 +25,9 @@ const Events = () => {
       </div>
       <h1 className="text-4xl font-mono p-7">Past Events</h1>
       <div className='flex max-sm:flex-wrap'>
+          {/* <EventsCardComp/>
           <EventsCardComp/>
-          <EventsCardComp/>
-          <EventsCardComp/>
+          <EventsCardComp/> */}
       </div>
     </div>
   )
