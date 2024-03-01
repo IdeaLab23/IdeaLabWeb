@@ -2,8 +2,20 @@ import connectDB from "@/libs/mongodb"
 import Event from "@/models/eventSchema"
 import { NextResponse } from "next/server"
 
-export function GET() {
-  return Response.json("Working GET")
+export async function GET() {
+  try {
+    await connectDB()
+    const eventsData = await Event.find({})
+    return NextResponse.json(eventsData)
+  } catch (error) {
+    return NextResponse.json({
+      message: "Failed to create event",
+      error: error
+    },
+    {
+      status: 500
+    })
+  }
 }
 
 export async function POST(request) {
