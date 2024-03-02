@@ -2,6 +2,7 @@ import connectDB from "@/libs/mongodb"
 import Event from "@/models/eventSchema"
 import { NextResponse } from "next/server"
 
+//GET all events
 export async function GET() {
   try {
     await connectDB()
@@ -18,6 +19,7 @@ export async function GET() {
   }
 }
 
+//POST new event
 export async function POST(request) {
   try {
     const { title, desc, date, seats } = await request.json()
@@ -38,6 +40,30 @@ export async function POST(request) {
   } catch (error) {
     return NextResponse.json({
       message: "Failed to create event",
+      error: error
+    },
+    {
+      status: 500
+    })
+  }
+}
+
+//DELETE event
+export async function DELETE(request) {
+  try {
+    const id = await request.nextUrl.searchParams.get("id")
+    console.log(id)
+    await connectDB() 
+    await Event.findOneAndDelete({_id: id})
+    return NextResponse.json({
+      message: "Event deleted successfully"
+    },
+    {
+      status: 200
+    })
+  } catch (error) {
+    return NextResponse.json({
+      message: "Failed to delete event",
       error: error
     },
     {
