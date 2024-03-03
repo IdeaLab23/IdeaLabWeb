@@ -19,31 +19,42 @@ const Contact = () => {
         <form action="/contact" method="POST">
           <div className="flex flex-wrap justify-between ps-24 pt-10 max-sm:flex-col max-sm:items-center max-sm:ps-7 ">
             <div className="w-[52rem] max-sm:w-[45rem] ">
-              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="fName" type="text" placeholder="First Name*" />
-              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="lName" type="text" placeholder="Last Name" />
+              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="fName" type="text" placeholder="Full Name*" />
               <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="email" type="email" placeholder="Email*" />
               <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="number" type="number" placeholder="Phone Number" />
+              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="msg" type="text" placeholder="Notes" />
             </div>
             <h3 className='text-4xl font-[Montserrat] w-[60rem] pt-16 font-bold max-sm:leading-normal max-sm:text-7xl max-sm:ps-28 max-sm:pt-28 '>Tell us your Wonderfull Skills . . .</h3>
             <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
-              <label htmlFor="web" className="font-mono text-2xl max-sm:text-6xl ">Web Developer : </label>
-              <select name="webDev" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem] ">
+              <label htmlFor="iot" className="font-mono text-2xl max-sm:text-6xl">  IOT Skills: </label>
+              <select name="iotSkills" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]">
+                <option value="None">None</option>
+                 <option value="Microcontroller Platforms">Microcontroller Platforms( Arduino, Raspberry Pi, ESP8266, and ESP3)</option>
+                <option value="Understanding of IoT Concepts">Understanding of IoT Concepts</option>
+                 <option value="Knowledge of Sensors and Actuators">Knowledge of Sensors and Actuators</option>
+                 <option value="Basic Electronics">Basic Electronics</option>
+                 <option value="Programming Skills">Programming Skills</option>
+                <option value="Communication Protocols">Communication Protocols(Bluetooth & Wifi)</option>
+                 <option value="IoT Platforms and Tools">IoT Platforms and Tools</option>
+                <option value="Security Fundamentals">Security Fundamentals</option>
+              </select></div>
+            <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
+
+              <label htmlFor="developer" className="font-mono text-2xl max-sm:text-6xl "> Developer : </label>
+              <select name="Dev" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem] ">
                 <option value="frontend">None</option>
                 <option value="frontend">Frontend Developer</option>
                 <option value="backend">Backend Developer</option>
                 <option value="fullstack">Fullstack Developer</option>
-              </select>
-            </div>
-            <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
-              <label htmlFor="app" className="font-mono text-2xl max-sm:text-6xl">App Developer : </label>
-              <select name="appDev" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]">
-                <option value="frontend">None</option>
                 <option value="frontend">Android Developer</option>
+                <option value="cross">Cross Platform Mobile Developer</option>
                 <option value="backend">IOS Developer</option>
+
               </select>
             </div>
+          
             <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
-              <label htmlFor="ui" className="font-mono text-2xl max-sm:text-6xl">UI/UX Designer : </label>
+              <label htmlFor="ui" className="font-mono text-2xl max-sm:text-6xl"> Designer : </label>
               <select name="uiux" id="stack" className="bg-[#676262] p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]">
                 <option value="frontend">None</option>
                 <option value="frontend">Canva</option>
