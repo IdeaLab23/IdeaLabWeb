@@ -15,10 +15,11 @@ const Footer = () => {
                 <div className="w-[20rem] max-sm:-[30rem] ">
                     <h3 className="text-3xl text-white font-bold max-sm:text-[3.5rem] ">Our Coordinators </h3>
                     <ul className="pt-6 text-lg font-medium text-[#959595] max-sm:text-4xl max-sm:py-10 max-sm:leading-normal ">
-                        <li className='hover:text-slate-200'><Link href="https://in.linkedin.com/in/dr-anand-singh-550488149">Dr. Anand Singh(Coordinator AICTE IDEA Lab, & HOD, Electrical & Electronic Department at LNCT Group of Colleges)</Link></li>
-                        <li className='hover:text-slate-200'><Link href="#aboutUs">About Us</Link></li>
-                        <li className='hover:text-slate-200'><Link href="#">Projects</Link></li>
-                        <li className='hover:text-slate-200'><Link href="#contact">Contact</Link></li>
+                        <li className='hover:text-slate-200'><Link href="https://in.linkedin.com/in/dr-anand-singh-550488149"><b>Dr. Anand Singh</b>(Coordinator AICTE IDEA Lab, & HOD, Electrical & Electronic Department )</Link></li>
+                       <br></br>
+                        <li className='hover:text-slate-200'><Link href="https://in.linkedin.com/in/siju-george"><b>Prof.Siju George</b>(Coordinator AICTE IDEA Lab )</Link></li>
+                        <li className='hover:text-slate-200'><Link href=""></Link></li>
+                        <li className='hover:text-slate-200'><Link href="#contact"></Link></li>
                     </ul>
                 </div>
                     <div className="w-[20rem] max-sm:-[30rem] ">
