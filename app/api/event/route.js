@@ -52,7 +52,6 @@ export async function POST(request) {
 export async function DELETE(request) {
   try {
     const id = await request.nextUrl.searchParams.get("id")
-    console.log(id)
     await connectDB() 
     await Event.findOneAndDelete({_id: id})
     return NextResponse.json({
