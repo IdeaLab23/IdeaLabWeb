@@ -17,7 +17,7 @@ const EventsCardComp = (props) => {
           alt="Image" 
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-        <div className="flex justify-between font-bold p-3 text-lg">
+        <div className="flex gap-5 font-bold p-3 text-lg">
           <span>{props.seats}</span>
           <button className='border-2 rounded w-24 bg-[#111827] p-1 hover:bg-indigo-900'>Sign Up</button>
         </div>

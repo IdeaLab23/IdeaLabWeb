@@ -22,11 +22,12 @@ export async function GET() {
 //POST new event
 export async function POST(request) {
   try {
-    const { title, desc, date, seats } = await request.json()
+    const { title, desc, date, time, seats } = await request.json()
     const newEvent = new Event({
       title,
       desc,
       date,
+      time,
       seats
     })
     await connectDB()
