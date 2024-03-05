@@ -6,5 +6,3 @@ export default async function getEvents() {
         console.log(error)
     }
 }
-
-const events = await getEvents()
