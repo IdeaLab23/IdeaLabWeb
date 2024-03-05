@@ -1,0 +1,34 @@
+import connectDB from "@/libs/mongodb"
+import FormResponse from "@/models/formResponsesSchema"
+import { NextResponse } from "next/server"
+
+export async function POST(request) {
+  try {
+    const { name, email, phone, pitch, iot, dev, ui } = await request.json()
+    const newFormResponse = new FormResponse({
+      name,
+      email,
+      phone,
+      pitch,
+      iot,
+      dev,
+      ui
+    })
+    await connectDB()
+    await FormResponse.create(newFormResponse)
+    return NextResponse.json({
+      message: "Form response created successfully"
+    },
+    {
+      status: 201
+    })
+  } catch (error) {
+    return NextResponse.json({
+      message: "Failed to create form response",
+      error: error
+    },
+    {
+      status: 500
+    })
+  }
+}

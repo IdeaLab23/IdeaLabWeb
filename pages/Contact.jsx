@@ -21,7 +21,13 @@ const Contact = () => {
       dev,
       ui
     }
-    console.log(formResponse)
+    const res = await fetch("/api/FormResponses", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formResponse)
+    })
   }
   return (
     <div id="contact" className="pt-36 pb-56 text-white bg-black max-sm:pt-48">
@@ -41,7 +47,7 @@ const Contact = () => {
               <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="fName" type="text" placeholder="Full Name*" value={name} onChange={(e) => setName(e.target.value)} />
               <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="email" type="email" placeholder="Email*" value={email} onChange={(e) => setEmail(e.target.value)} />
               <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="number" type="number" placeholder="Phone Number" value={number} onChange={(e) => setNumber(e.target.value)} />
-              <textarea className="w-full h-[5.9rem] my-4 py-8 pl-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="pitch" id="" cols="" rows="" placeholder="Pitch Yourself" value={pitch} onChange={(e) => setPitch(e.target.value)}></textarea>
+              <textarea className="w-full h-[5.9rem] my-4 py-8 pl-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="pitch" id="" cols="" rows="" placeholder="Pitch Yourself *" value={pitch} onChange={(e) => setPitch(e.target.value)}></textarea>
             </div>
             <h3 className='text-4xl font-[Montserrat] w-[60rem] pt-16 font-bold max-sm:leading-normal max-sm:text-7xl max-sm:ps-28 max-sm:pt-28 '>Tell us your Wonderfull Skills . . .</h3>
             <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
@@ -62,23 +68,23 @@ const Contact = () => {
             <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
               <label htmlFor="developer" className="font-mono text-2xl max-sm:text-6xl "> Developer : </label>
               <select name="Dev" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]" value={dev} onChange={(e) => setDev(e.target.value)}>
-                <option value="frontend">None</option>
-                <option value="frontend">Frontend Developer</option>
-                <option value="backend">Backend Developer</option>
-                <option value="fullstack">Fullstack Developer</option>
-                <option value="frontend">Android Developer</option>
-                <option value="cross">Cross Platform Mobile Developer</option>
-                <option value="backend">IOS Developer</option>
+                <option value="None">None</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+                <option value="Fullstack Developer">Fullstack Developer</option>
+                <option value="Android Developer">Android Developer</option>
+                <option value="Cross Platform Mobile Developer">Cross Platform Mobile Developer</option>
+                <option value="IOS Developer">IOS Developer</option>
               </select>
             </div>
           
             <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
               <label htmlFor="ui" className="font-mono text-2xl max-sm:text-6xl"> Designer : </label>
               <select name="uiux" id="stack" className="bg-[#676262] p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]" value={ui} onChange={(e) => setUi(e.target.value)}>
-                <option value="frontend">None</option>
-                <option value="frontend">Canva</option>
-                <option value="backend">Figma</option>
-                <option value="fullstack">Adobe Photoshop</option>
+                <option value="None">None</option>
+                <option value="Canva">Canva</option>
+                <option value="Figma">Figma</option>
+                <option value="Adobe Photoshop">Adobe Photoshop</option>
               </select>
             </div>
           </div>
