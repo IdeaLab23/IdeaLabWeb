@@ -1,8 +1,27 @@
+"use client"
 import Image from "next/legacy/image"
+import React from "react"
 
 const Contact = () => {
-  const submitHandler = () => {
-    
+  const [name, setName] = React.useState("")
+  const [email, setEmail] = React.useState("")
+  const [number, setNumber] = React.useState("")
+  const [pitch, setPitch] = React.useState("")
+  const [iot, setIot] = React.useState("")
+  const [dev, setDev] = React.useState("")
+  const [ui, setUi] = React.useState("")
+  const submitHandler = async (e) => {
+    e.preventDefault()
+    const formResponse = {
+      name,
+      email,
+      number,
+      pitch,
+      iot,
+      dev,
+      ui
+    }
+    console.log(formResponse)
   }
   return (
     <div id="contact" className="pt-36 pb-56 text-white bg-black max-sm:pt-48">
@@ -16,32 +35,33 @@ const Contact = () => {
         />
       </div>
         <h3 className='text-7xl font-[Montserrat] w-[60rem] leading-normal max-sm:leading-tight ps-24 max-sm:text-center max-sm:text-[7.9rem] '>We can't wait to hear your ideas! Contact us.</h3>
-        <form action="/contact" method="POST">
+        <form onSubmit={submitHandler}>
           <div className="flex flex-wrap justify-between ps-24 pt-10 max-sm:flex-col max-sm:items-center max-sm:ps-7 ">
             <div className="w-[52rem] max-sm:w-[45rem] ">
-              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="fName" type="text" placeholder="Full Name*" />
-              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="email" type="email" placeholder="Email*" />
-              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="number" type="number" placeholder="Phone Number" />
-              <textarea className="w-full h-[5.3rem] my-4 py-[2.1rem] pl-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="pitch" id="" cols="" rows="" placeholder="Pitch Yourself"></textarea>
+              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="fName" type="text" placeholder="Full Name*" value={name} onChange={(e) => setName(e.target.value)} />
+              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="email" type="email" placeholder="Email*" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="number" type="number" placeholder="Phone Number" value={number} onChange={(e) => setNumber(e.target.value)} />
+              <textarea className="w-full h-[5.9rem] my-4 py-8 pl-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="pitch" id="" cols="" rows="" placeholder="Pitch Yourself" value={pitch} onChange={(e) => setPitch(e.target.value)}></textarea>
             </div>
             <h3 className='text-4xl font-[Montserrat] w-[60rem] pt-16 font-bold max-sm:leading-normal max-sm:text-7xl max-sm:ps-28 max-sm:pt-28 '>Tell us your Wonderfull Skills . . .</h3>
             <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
               <label htmlFor="iot" className="font-mono text-2xl max-sm:text-6xl">  IOT Skills: </label>
-              <select name="iotSkills" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]">
+              <select name="iotSkills" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]" value={iot} onChange={(e) => setIot(e.target.value)}>
                 <option value="None">None</option>
-                 <option value="Microcontroller Platforms">Microcontroller Platforms( Arduino, Raspberry Pi, ESP8266, and ESP3)</option>
+                <option value="Microcontroller Platforms">Microcontroller Platforms( Arduino, Raspberry Pi, ESP8266, and ESP3)</option>
                 <option value="Understanding of IoT Concepts">Understanding of IoT Concepts</option>
-                 <option value="Knowledge of Sensors and Actuators">Knowledge of Sensors and Actuators</option>
-                 <option value="Basic Electronics">Basic Electronics</option>
-                 <option value="Programming Skills">Programming Skills</option>
+                <option value="Knowledge of Sensors and Actuators">Knowledge of Sensors and Actuators</option>
+                <option value="Basic Electronics">Basic Electronics</option>
+                <option value="Programming Skills">Programming Skills</option>
                 <option value="Communication Protocols">Communication Protocols(Bluetooth & Wifi)</option>
-                 <option value="IoT Platforms and Tools">IoT Platforms and Tools</option>
+                <option value="IoT Platforms and Tools">IoT Platforms and Tools</option>
                 <option value="Security Fundamentals">Security Fundamentals</option>
-              </select></div>
-            <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
+              </select>
+            </div>
 
+            <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
               <label htmlFor="developer" className="font-mono text-2xl max-sm:text-6xl "> Developer : </label>
-              <select name="Dev" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem] ">
+              <select name="Dev" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]" value={dev} onChange={(e) => setDev(e.target.value)}>
                 <option value="frontend">None</option>
                 <option value="frontend">Frontend Developer</option>
                 <option value="backend">Backend Developer</option>
@@ -49,13 +69,12 @@ const Contact = () => {
                 <option value="frontend">Android Developer</option>
                 <option value="cross">Cross Platform Mobile Developer</option>
                 <option value="backend">IOS Developer</option>
-
               </select>
             </div>
           
             <div className="w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 ">
               <label htmlFor="ui" className="font-mono text-2xl max-sm:text-6xl"> Designer : </label>
-              <select name="uiux" id="stack" className="bg-[#676262] p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]">
+              <select name="uiux" id="stack" className="bg-[#676262] p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]" value={ui} onChange={(e) => setUi(e.target.value)}>
                 <option value="frontend">None</option>
                 <option value="frontend">Canva</option>
                 <option value="backend">Figma</option>
