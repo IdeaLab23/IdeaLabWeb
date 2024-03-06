@@ -49,7 +49,7 @@ const page = () => {
                         <h3 className="text-2xl text-white font-medium">Form Responses</h3>
                         <p className="text-lg font-medium text-[#959595]">View form responses from users</p>
                     </div>
-                    <button type="submit" className="w-36 h-10 bg-[#292C36] rounded-md ms-auto hover:bg-[#393b41] "><Link href={'/Events'}>Go to Page</Link></button>
+                    <button type="submit" className="w-36 h-10 bg-[#292C36] rounded-md ms-auto hover:bg-[#393b41] "><Link href={'/admin/formResponses'}>Go to Page</Link></button>
                 </div>
                 <div className="w-[80%] flex gap-7 justify-center items-center">
                     <div className="w-20 bg-[#1f2127] p-2 rounded-xl">
