@@ -40,10 +40,9 @@ const Events = () => {
       </div>
       <div className='flex flex-wrap'>
           {fetchedEvents}
-          {fetchedEvents}
       </div>
       <h1 className="text-4xl font-mono p-7">Past Events</h1>
-      <div className='flex max-sm:flex-wrap'>
+      <div className='flex flex-wrap max-sm:flex-wrap'>
           {fetchedEvents}
       </div>
     </div>
