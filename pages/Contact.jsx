@@ -31,8 +31,8 @@ const Contact = () => {
     eval(alert("Form Submitted Successfully"))
   }
   return (
-    <div id="contact" className="pt-36 pb-56 text-white bg-black max-sm:pt-48">
-      <div className="z-0 absolute top-[385rem] w-full h-[300px] max-sm:top-[1401rem] max-sm:w-[62rem] ">
+    <div id="contact" className="pt-20 pb-56 text-white bg-black max-sm:pt-48">
+      <div className="z-0 absolute top-[505rem] w-full h-[300px] max-sm:top-[1401rem] max-sm:w-[62rem] ">
         <Image 
           src="/Ellipse-BG.png"
           alt="rfe"

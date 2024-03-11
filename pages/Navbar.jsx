@@ -64,7 +64,7 @@ const Page1 = () => {
             <Link href="/Events">Events</Link>
           </p>
           <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto">
-            <Link href="/">Projects</Link>
+            <Link href="#team">Team</Link>
           </p>
           <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto">
             <Link href="#contact">Contact Us</Link>
