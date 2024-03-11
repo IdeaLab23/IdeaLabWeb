@@ -13,7 +13,6 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 1,
   userScalable: true,
-
 }
 export default function RootLayout({ children }) {
   return (

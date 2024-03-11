@@ -28,6 +28,7 @@ const Contact = () => {
       },
       body: JSON.stringify(formResponse)
     })
+    eval(alert("Form Submitted Successfully"))
   }
   return (
     <div id="contact" className="pt-36 pb-56 text-white bg-black max-sm:pt-48">

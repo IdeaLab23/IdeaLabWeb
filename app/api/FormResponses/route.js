@@ -6,7 +6,7 @@ import { NextResponse } from "next/server"
 export async function GET() {
   try {
     await connectDB()
-    const formResponsesData = await FormResponse.find({})
+    const formResponsesData = await FormResponse.find({}).sort({"createdAt" : "desc"})
     return NextResponse.json(formResponsesData)
   } catch (error) {
     return NextResponse.json({
