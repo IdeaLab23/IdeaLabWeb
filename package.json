@@ -13,7 +13,6 @@
     "express": "^4.18.2",
     "mongoose": "^8.2.0",
     "next": "^14.0.3",
-    "next-auth": "^5.0.0-beta.15",
     "react": "latest",
     "react-dom": "latest",
     "react-photo-album": "^2.3.0",
