@@ -2,12 +2,14 @@
 import React from 'react'
 import getUser from '@/app/controllers/getUser'
 import bcrypt from 'bcryptjs'
-
+import { useRouter } from 'next/navigation'
 
 const page = () => {
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
   const [error, setError] = React.useState('')
+
+  const router = useRouter()
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -20,20 +22,18 @@ const page = () => {
     const form = e.target
     form.reset()
  
-    bcrypt.genSalt(10, function(err, salt) {
-      bcrypt.hash(password, salt, function(err, hash) {
-          // Store hash in your password DB.
-          console.log(hash);
-      });
-    });
+    // bcrypt.genSalt(10, function(err, salt) {
+    //   bcrypt.hash(password, salt, function(err, hash) {
+    //       console.log(hash);
+    //   });
+    // });
     
     const fetchUser = async () => {
       try {
         const userData = await getUser()
         if (userData[0].email === email) {
-          console.log('Email is correct');
           bcrypt.compare(password, userData[0].password, function(err, res) {
-            res === true ? console.log('Password is correct') : setError('Password is incorrect');
+            res === true ? router.push('/adminUserOfIdeaLabLNCT') : setError('Password is incorrect');
           });
         } else {
           setError('Email is incorrect');

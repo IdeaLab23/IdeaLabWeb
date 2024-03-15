@@ -69,6 +69,9 @@ const Page1 = () => {
           <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto">
             <Link href="#contact">Contact Us</Link>
           </p>
+          <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto">
+            <Link href="/login">Admin</Link>
+          </p>
         </div>
       </div>          
         <div className={`hidden absolute bg-[#151721] w-[1000px] max-sm:text-white max-sm:font-mono max-sm:text-4xl max-sm:mt-36 max-sm:ps-28 max-sm:py-12 max-sm:${isOpen ? "block" : "hidden"}`}>
