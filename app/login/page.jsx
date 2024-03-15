@@ -1,6 +1,8 @@
 'use client'
 import React from 'react'
 import getUser from '@/app/controllers/getUser'
+import bcrypt from 'bcryptjs'
+
 
 const page = () => {
   const [email, setEmail] = React.useState('')
@@ -17,21 +19,24 @@ const page = () => {
     }
     const form = e.target
     form.reset()
-
+ 
+    bcrypt.genSalt(10, function(err, salt) {
+      bcrypt.hash(password, salt, function(err, hash) {
+          // Store hash in your password DB.
+          console.log(hash);
+      });
+    });
+    
     const fetchUser = async () => {
       try {
         const userData = await getUser()
-        console.log(userData[0].email);
-        console.log(email);
         if (userData[0].email === email) {
           console.log('Email is correct');
-          if (userData[0].password === password) {
-            console.log('Password is correct');
-          } else {
-            console.log('Password is incorrect');
-          }
+          bcrypt.compare(password, userData[0].password, function(err, res) {
+            res === true ? console.log('Password is correct') : setError('Password is incorrect');
+          });
         } else {
-          console.log('Email is incorrect');
+          setError('Email is incorrect');
         }
       } catch (error) {
         console.log(error);
