@@ -10,6 +10,7 @@ const page = () => {
             try {
                 const formResponsesData = await getFormResponses()
                 setFormResponses(formResponsesData)
+                console.log(formResponses);
             } catch (error) {
                 console.log(error)
             }

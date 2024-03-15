@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
+import getUser from '@/app/controllers/getUser'
 
 const page = () => {
-  
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
   const [error, setError] = React.useState('')
@@ -15,7 +15,29 @@ const page = () => {
     } else {
       setError('')
     }
-    console.log(email, password);
+    const form = e.target
+    form.reset()
+
+    const fetchUser = async () => {
+      try {
+        const userData = await getUser()
+        console.log(userData[0].email);
+        console.log(email);
+        if (userData[0].email === email) {
+          console.log('Email is correct');
+          if (userData[0].password === password) {
+            console.log('Password is correct');
+          } else {
+            console.log('Password is incorrect');
+          }
+        } else {
+          console.log('Email is incorrect');
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchUser()
   }
 
   return (
