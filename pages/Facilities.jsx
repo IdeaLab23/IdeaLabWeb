@@ -17,7 +17,7 @@ const data=
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
-      <h3 className="text-slate-200 font-mono ms-56 text-lg max-sm:ms-[20rem] max-sm:text-5xl ">Our Facilities</h3>
+      <h3 className="text-slate-200 font-mono ms-56 text-lg max-sm:ms-[2rem] max-sm:text-3xl ">Our Facilities</h3>
       <div className="flex max-sm:flex max-sm:flex-col max-sm:items-center max-sm:text-center max-sm:w-[62rem] ">
         <h1 className="text-[3rem] font-bold font-mono text-white leading-[4rem] ms-56 max-sm:text-[4.5rem] max-sm:leading-[6rem] max-sm:my-10 max-sm:ms-0 ">Our World Class Facilities<br/>and Resources</h1>
         <button className="w-52 h-14 bg-[#7B8CE5] rounded-full text-white ms-64 text-lg font-mono hover:bg-white hover:text-[#7B8CE5] max-sm:w-[23rem] max-sm:h-28 max-sm:text-4xl max-sm:ms-0 ">Discover More</button>  

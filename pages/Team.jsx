@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
+import '../app/globals.css'
 
 const Team = () => {
   return (
-    <div className='text-white' id='team'>
+    <div className='text-white bg-black sm:max-sm:w[80%]'>
         <div className="flex flex-col text-7xl font-[Montserrat] pt-20 leading-normal justify-center items-center">Key People & Contributors
         <div className="flex flex-col justify-center ">
               <Image className='w-[22rem] h-[33rem] '
@@ -13,7 +14,7 @@ const Team = () => {
                   alt="me"
               />
               <h2 className="text-2xl font-bold">Dr. Vinay Kumar Sahu</h2>
-              <h3 className="text-2xl">Cheif Mentor</h3>
+              <h3 className="text-2xl">Chief Mentor</h3>
             </div> 
           <div className="w-full flex justify-evenly items-center">
             <div className="flex flex-col justify-center ">

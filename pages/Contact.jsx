@@ -32,7 +32,7 @@ const Contact = () => {
   }
   return (
     <div id="contact" className="pt-20 pb-56 text-white bg-black max-sm:pt-48">
-      <div className="z-0 absolute top-[505rem] w-full h-[300px] max-sm:top-[1401rem] max-sm:w-[62rem] ">
+      {/* <div className="z-0 absolute top-[505rem] w-full h-[300px] max-sm:top-[1401rem] max-sm:w-[62rem] ">
         <Image 
           src="/Ellipse-BG.png"
           alt="rfe"
@@ -40,7 +40,7 @@ const Contact = () => {
           objectFit="cover"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-      </div>
+      </div> */}
         <h3 className='text-7xl font-[Montserrat] w-[60rem] leading-normal max-sm:leading-tight ps-24 max-sm:text-center max-sm:text-[7.9rem] '>We can't wait to hear your ideas! Contact us.</h3>
         <form onSubmit={submitHandler}>
           <div className="flex flex-wrap justify-between ps-24 pt-10 max-sm:flex-col max-sm:items-center max-sm:ps-7 ">
