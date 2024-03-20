@@ -56,7 +56,7 @@ const Page3 = () => {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
         </div>
-    <div className="flex justify-evenly max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-[62rem] ">
+    <div className="flex justify-evenly max-sm:flex max-sm:flex-col max-sm:items-center max-sm:w-[5rem] ">
         <div className="text-white">
             <OfferComp3 title="Access to Resources" text={resources} />
             <OfferComp3 title="Product Development" text={product} />

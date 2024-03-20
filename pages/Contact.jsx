@@ -41,13 +41,13 @@ const Contact = () => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div> */}
-        <h3 className='text-7xl font-[Montserrat] w-[60rem] leading-normal max-sm:leading-tight ps-24 max-sm:text-center max-sm:text-[7.9rem] '>We can't wait to hear your ideas! Contact us.</h3>
+        <h3 className='text-7xl font-[Montserrat] xl:w-[60rem] leading-normal max-sm:leading-tight ps-24 max-sm:text-centr  max-sm:text-[3rem]  max-sm:ps-4'>We can't wait to hear your ideas! Contact us.</h3>
         <form onSubmit={submitHandler}>
-          <div className="flex flex-wrap justify-between ps-24 pt-10 max-sm:flex-col max-sm:items-center max-sm:ps-7 ">
-            <div className="w-[52rem] max-sm:w-[45rem] ">
-              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="fName" type="text" placeholder="Full Name*" value={name} onChange={(e) => setName(e.target.value)} />
-              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="email" type="email" placeholder="Email*" value={email} onChange={(e) => setEmail(e.target.value)} />
-              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="phone" type="text" placeholder="Phone Number" value={phone} onChange={(e) => setPhone(e.target.value)} />
+          <div className="flex flex-wrap justify-between xl:ps-24 pt-10 max-sm:flex-col  ps-5">
+            <div className="w-[52rem] max-sm:w-[20rem] ">
+              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[3rem] max-sm:text-[2.rem] max-sm:px-8 " name="fName" type="text" placeholder="Full Name*" value={name} onChange={(e) => setName(e.target.value)} />
+              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[3rem] max-sm:text-[2.rem] max-sm:px-8 " name="email" type="email" placeholder="Email*" value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input className="w-full h-[5.3rem] my-4 px-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[3rem] max-sm:text-[2.rem] max-sm:px-8 " name="phone" type="text" placeholder="Phone Number" value={phone} onChange={(e) => setPhone(e.target.value)} />
               <textarea className="w-full h-[5.9rem] my-4 py-8 pl-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2.6rem] max-sm:px-8 " name="pitch" id="" cols="" rows="" placeholder="Pitch Yourself *" value={pitch} onChange={(e) => setPitch(e.target.value)}></textarea>
             </div>
             <h3 className='text-4xl font-[Montserrat] w-[60rem] pt-16 font-bold max-sm:leading-normal max-sm:text-7xl max-sm:ps-28 max-sm:pt-28 '>Tell us your Wonderfull Skills . . .</h3>
