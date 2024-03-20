@@ -11,7 +11,7 @@ const Page3 = () => {
     const product = "Our dedicated teams of experts collaborate with you to bring your vision to life. From concept to market, we guide every step of your innovation journey."
     const network = "Students can connect with other like-minded peers and potential collaborators, helping them to build a network of resources and support."
   return (
-    <div className="pt-24 pb-10 bg-black">
+    <div className="pt-24 pb-10 bg-black w-full">
         <div className="z-0 absolute w-[400px] h-full rotate-180 right-0 top-[115rem] max-sm:top-[480rem] max-sm:left-[500px] max-sm:w-[500px] max-sm:h-[1000px] ">
             <Image
                 src="/Ellipse-6.png"
