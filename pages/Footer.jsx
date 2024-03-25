@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
         <footer className='bg-black'>
-            <div className="flex flex-wrap justify-between pt-16 pb-8 ps-24 max-sm:w-[60rem] min-[550px]:pt-24 ">
+            <div className="flex flex-wrap justify-between pt-16 pb-8 xl:ps-24 max-sm:w-[30rem] max-sm:pt-24 ">
                 <div className="w-[20rem] max-sm:-[30rem] ">
                     <h3 className="text-3xl text-white font-bold max-sm:text-[3.5rem] ">Address</h3>
                     <div className="pt-6 text-lg font-medium text-[#959595] hover:text-slate-200 hover:cursor-pointer max-sm:text-4xl max-sm:leading-normal max-sm:py-10 ">
@@ -12,7 +12,7 @@ const Footer = () => {
                     
                     </div>
                 </div>
-                <div className="w-[20rem] max-sm:-[30rem] ">
+                <div className="w-[20rem] max-sm:-[20rem] ">
                     <h3 className="text-3xl text-white font-bold max-sm:text-[3.5rem] ">Our Coordinators </h3>
                     <ul className="pt-6 text-lg font-medium text-[#959595] max-sm:text-4xl max-sm:py-10 max-sm:leading-normal ">
                         <li className='hover:text-slate-200'><Link href="https://in.linkedin.com/in/dr-anand-singh-550488149"><b>Dr. Anand Singh</b>(Coordinator AICTE IDEA Lab, & HOD, Electrical & Electronic Department )</Link></li>
@@ -40,15 +40,15 @@ const Footer = () => {
                     {/* <li className='hover:text-slate-200'><Link href="https://instagram.com">Instagram</Link></li> */}
                     </ul>
                 </div>
-                <div className="w-[20rem] max-sm:-[30rem] ">
-                    <h3 className="text-3xl text-white font-bold max-sm:text-[3.5rem] ">Contact Us</h3>
+                <div className="w-[20rem] max-sm:-[1rem] ">
+                    <h3 className="text-3xl text-white font-bold max-sm:text-[3rem] ">Contact Us</h3>
                     <ul className="pt-6 text-lg font-medium text-[#959595] hover:cursor-pointer max-sm:text-4xl max-sm:py-10 max-sm:leading-normal ">
                         <li className='hover:text-slate-200'>Phone</li>
                         <li className='hover:text-slate-200'><Link href="mailto:idealab@lnct.ac.in">Email</Link></li>
                     </ul>
                 </div>
           </div>
-          <div className="flex justify-between pt-8 pb-4 px-24 text-lg font-medium text-[#959595] max-sm:w-[60rem] max-sm:text-3xl max-sm:px-12 max-sm:py-10 max-sm:ms-5 ">
+          <div className="flex justify-between pt-8 pb-4 px-24 text-lg font-medium text-[#959595] max-sm:w-[60rem] max-sm:text-xl max-sm:px-12 max-sm:py-10 max-sm:ms-5 ">
             <p>© 2023 All Rights Reserved.</p>
             <p>Terms & Conditions</p>
           </div>

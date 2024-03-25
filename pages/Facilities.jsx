@@ -8,7 +8,7 @@ const data=
   ]
   return (
     <div id="facilities" className="bg-black pt-14 max-sm:w-fill  ">
-      <div className="z-0 absolute right-0 top-[250rem] rotate-180 w-[300px] h-full max-sm:top-[1050rem] max-sm:left-[500px] max-sm:w-[500px] max-sm:h-[1000px]">
+      <div className="z-0 xl:absolute right-0 top-[250rem] rotate-180 w-[300px] h-full max-sm:top-[1050rem] max-sm:left-[500px] max-sm:w-[50px] max-sm:h-[10px] ">
         <Image 
           src="/Ellipse-6.png"
           alt="tgf"

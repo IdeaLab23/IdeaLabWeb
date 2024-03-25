@@ -6,7 +6,7 @@ const Page1 = () => {
   const [isOpen, setIsOpen] =  React.useState(false)
   return (
     <div>
-      <div className="flex items-center pt-12 max-sm:w-[1000px] max-sm:pt-20">
+      <div className="flex items-center pt-12 max-sm:w-[100vw] max-sm:pt-20">
         <div className="ms-16 absolute w-24 h-24 max-sm:w-[5rem] max-sm:h-[10rem] max-sm:top-10 max-sm:-left-6">
           <Image 
             src="/logo.png"
@@ -74,7 +74,7 @@ const Page1 = () => {
           </p>
         </div>
       </div>          
-        <div className={`hidden absolute bg-[#151721] w-[1000px] max-sm:text-white max-sm:font-mono max-sm:text-4xl max-sm:mt-36 max-sm:ps-28 max-sm:py-12 max-sm:${isOpen ? "block" : "hidden"}`}>
+        <div className={`hidden absolute bg-[#151721] xl:w-[1000px] max-sm:text-white max-sm:font-mono max-sm:text-4xl max-sm:mt-36 max-sm:ps-10 max-sm:py-12 max-sm:${isOpen ? "block" : "hidden"}`}>
           <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-8">
             <Link href="/">Home</Link>
           </p>
