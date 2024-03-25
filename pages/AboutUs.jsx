@@ -7,7 +7,7 @@ const Page2 = () => {
   const text3 = "At IDEALab, we believe that innovation thrives when it meets the real world. Our community fosters projects that don't just stay on paper or screens; they leap into action, shaping the future. "
   return (
     <div id="aboutUs" className="bg-black w-full">
-      <div className="z-0 absolute top-[55rem] w-[400px] h-full max-sm:top-[270rem] max-sm:w-[100vw] max-sm:h-[1000px] ">
+      <div className="z-0 absolute top-[55rem] w-[400px] h-full max-sm:top-[270rem] max-sm:w-[100vw] max-sm:h-[1000px] max-sm:hidden ">
         <Image 
           src="/Ellipse-6.png"
           alt="rfe"
@@ -16,7 +16,7 @@ const Page2 = () => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
-      <div className="xl:mt-44  mt-28">
+      <div className="xl:mt-44  mt-28 max-sm:text-center">
         <h3 className="text-slate-200 font-mono xl:ms-56 xl:text-lg max-sm:text-2xl  w-[20rem] ms-5 ">Get to Know IDEA Lab</h3>
         <div className="flex ">
             <h1 className="text-[3.4rem] w-[40rem] font-bold font-mono text-white leading-[4rem] xl:ms-56 max-sm:text-[3rem] max-sm:leading-[5.5rem] max-sm:my-9 max-sm:w-[15rem] max-sm:ms-12 ">Innovating the Future with your Ideas</h1>
@@ -28,7 +28,7 @@ const Page2 = () => {
           <AboutComp img="/accu.png" title="Application" text={text3}/>
         </div>
       </div>
-      <hr className="mx-auto mt-16 w-[75%] max-sm:w-[80%] max-sm:ms-1"/>
+      <hr className="mx-auto mt-16 w-[75%] max-sm:w-[90%] max-sm:ms-5"/>
     </div>
   )
 }

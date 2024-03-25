@@ -51,9 +51,9 @@ const Contact = () => {
               <textarea className="w-full h-[5.9rem] my-4 py-8 pl-4 text-xl text-white placeholder-[#959595] bg-[#363636] border-b-2 border-white focus:border-b-2 focus:border-orange-600 focus:outline-none max-sm:h-[11rem] max-sm:text-[2rem] max-sm:px-8 " name="pitch" id="" cols="" rows="" placeholder="Pitch Yourself *" value={pitch} onChange={(e) => setPitch(e.target.value)}></textarea>
             </div>
             <h3 className='text-4xl font-[Montserrat] xl:w-[60rem] pt-16 font-bold max-sm:leading-normal max-sm:text-2xl  max-sm:pt-28 '>Tell us your Wonderfull Skills . . .</h3>
-            <div className="xl:w-[52rem] pt-8 ps-10 max-sm:ms-2 max-sm:pt-10 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-6 max-sm:w-28 ">
-              <label htmlFor="iot" className="font-mono text-2xl max-sm:text-3xl">  IOT Skills: </label>
-              <select name="iotSkills" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]" value={iot} onChange={(e) => setIot(e.target.value)}>
+            <div className="xl:w-[52rem] pt-8 ps-10 max-sm:ms-5 max-sm:pt-10 max-sm:w-28 ">
+              <label htmlFor="iot" className="font-mono text-2xl max-sm:text-2xl">  IOT Skills: </label>
+              <select name="iotSkills" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[3rem] max-sm:text-2xl max-sm:w-[15rem]" value={iot} onChange={(e) => setIot(e.target.value)}>
                 <option value="None">None</option>
                 <option value="Microcontroller Platforms">Microcontroller Platforms( Arduino, Raspberry Pi, ESP8266, and ESP3)</option>
                 <option value="Understanding of IoT Concepts">Understanding of IoT Concepts</option>
@@ -66,9 +66,9 @@ const Contact = () => {
               </select>
             </div>
 
-            <div className="xl:w-[52rem] pt-8 ps-10 max-sm:ms-2 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-6 max-sm:w-28">
-              <label htmlFor="developer" className="font-mono text-2xl max-sm:text-5xl "> Developer : </label>
-              <select name="Dev" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]" value={dev} onChange={(e) => setDev(e.target.value)}>
+            <div className="xl:w-[52rem] pt-8 ps-10 max-sm:ms-2 max-sm:pt-16 max-sm:w-28">
+              <label htmlFor="developer" className="font-mono text-2xl max-sm:text-2xl "> Developer : </label>
+              <select name="Dev" id="stack" className="bg-[#676262] ms-3 p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[3rem] max-sm:text-2xl max-sm:w-[15rem]" value={dev} onChange={(e) => setDev(e.target.value)}>
                 <option value="None">None</option>
                 <option value="Frontend Developer">Frontend Developer</option>
                 <option value="Backend Developer">Backend Developer</option>
@@ -79,9 +79,9 @@ const Contact = () => {
               </select>
             </div>
           
-            <div className="w-[52rem] pt-8 ps-10 max-sm:ms-1 max-sm:pt-16 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:gap-9 max-sm:w-28 max-sm:ps-2 ">
-              <label htmlFor="ui" className="font-mono text-2xl max-sm:text-6xl"> Designer : </label>
-              <select name="uiux" id="stack" className="bg-[#676262] p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[5rem] max-sm:text-4xl max-sm:w-[30rem]" value={ui} onChange={(e) => setUi(e.target.value)}>
+            <div className="w-[52rem] pt-8 ps-10 max-sm:pt-16 max-sm:w-28 max-sm:ms-4 ">
+              <label htmlFor="ui" className="font-mono text-2xl max-sm:text-2xl"> Designer : </label>
+              <select name="uiux" id="stack" className="bg-[#676262] p-2 rounded-md text-center font-[Montserrat] font-bold tracking-wider w-[15rem] max-sm:h-[3rem] max-sm:text-2xl max-sm:w-[15rem]" value={ui} onChange={(e) => setUi(e.target.value)}>
                 <option value="None">None</option>
                 <option value="Canva">Canva</option>
                 <option value="Figma">Figma</option>
@@ -89,7 +89,7 @@ const Contact = () => {
               </select>
             </div>
           </div>
-          <button className="xl:w-[35rem] h-[6rem] ms-24 my-12 text-2xl text-white bg-black border border-white rounded hover:bg-white hover:text-black focus:outline-none max-sm:ms-10 max-sm:h-[3rem] max-sm:my-24 max-sm:text-3xl  max-sm:w-52" type="submit">Send</button>
+          <button className="xl:w-[35rem] h-[6rem] ms-24 my-12 text-2xl text-white bg-black border border-white rounded hover:bg-white hover:text-black focus:outline-none max-sm:ms-20 max-sm:h-[3rem] max-sm:my-24 max-sm:text-3xl  max-sm:w-52" type="submit">Send</button>
         </form>
     </div>
   )

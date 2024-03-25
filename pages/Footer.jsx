@@ -3,8 +3,8 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <div>
-        <footer className='bg-black'>
-            <div className="flex flex-wrap justify-between pt-16 pb-8 xl:ps-24 max-sm:w-[20rem] max-sm:pt-18 ">
+        <footer className='bg-black '>
+            <div className="flex flex-wrap justify-between pt-16 pb-8 xl:ps-24 max-sm:w-[24rem] max-sm:pt-18 max-sm:text-center">
                 <div className="w-[20rem] max-sm:-[20rem] ">
                     <h3 className="text-3xl text-white font-bold max-sm:text-[3.5rem] ">Address</h3>
                     <div className="pt-6 text-lg font-medium text-[#959595] hover:text-slate-200 hover:cursor-pointer max-sm:text-4xl max-sm:leading-normal max-sm:py-10 ">
@@ -13,7 +13,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="w-[20rem] max-sm:-[20rem] ">
-                    <h3 className="text-3xl text-white font-bold max-sm:text-[3.5rem] ">Our Coordinators </h3>
+                    <h3 className="text-3xl text-white font-bold max-sm:leading-normal  max-sm:text-[3.5rem] ">Our Coordinators </h3>
                     <ul className="pt-6 text-lg font-medium text-[#959595] max-sm:text-4xl max-sm:py-10 max-sm:leading-normal ">
                         <li className='hover:text-slate-200'><Link href="https://in.linkedin.com/in/dr-anand-singh-550488149"><b>Dr. Anand Singh</b>(Coordinator AICTE IDEA Lab, & HOD, Electrical & Electronic Department )</Link></li>
                        <br></br>
