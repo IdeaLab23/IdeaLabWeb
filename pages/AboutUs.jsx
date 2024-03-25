@@ -28,7 +28,7 @@ const Page2 = () => {
           <AboutComp img="/accu.png" title="Application" text={text3}/>
         </div>
       </div>
-      <hr className="mx-auto mt-16 w-[75%] max-sm:w-[200%] max-sm:ms-20"/>
+      <hr className="mx-auto mt-16 w-[75%] max-sm:w-[80%] max-sm:ms-1"/>
     </div>
   )
 }

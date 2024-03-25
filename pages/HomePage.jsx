@@ -35,7 +35,7 @@ const Page1 = () => {
         <button className={`text-[3.5rem] absolute top-[1rem] left-[49rem] z-10 ${play ? "block" : "hidden"}`} onClick={() => setPlay(!play)} >❌</button>
         <iframe className={`absolute left-10 top-3 ${play ? "block" : "hidden"}`} width="1000" height="770" src={`${play ? "https://www.youtube.com/embed/k0no4k1sgk8?si=PTJJYh8DcYuAI8UW&modestbranding=1" : ""}`} title="AICTE IdeaLab Tour" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
-      <hr className="mx-auto w-[75%] mt-28 max-sm:mt-[47rem] max-sm:w-[100%] max-sm:ms-4 "/>
+      <hr className="mx-auto w-[75%] mt-28 max-sm:mt-[47rem] max-sm:w-[90%] max-sm:ms-1 "/>
     </>
   )
 }

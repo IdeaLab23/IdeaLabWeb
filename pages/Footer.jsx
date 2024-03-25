@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <div>
         <footer className='bg-black'>
-            <div className="flex flex-wrap justify-between pt-16 pb-8 xl:ps-24 max-sm:w-[30rem] max-sm:pt-24 ">
-                <div className="w-[20rem] max-sm:-[30rem] ">
+            <div className="flex flex-wrap justify-between pt-16 pb-8 xl:ps-24 max-sm:w-[20rem] max-sm:pt-18 ">
+                <div className="w-[20rem] max-sm:-[20rem] ">
                     <h3 className="text-3xl text-white font-bold max-sm:text-[3.5rem] ">Address</h3>
                     <div className="pt-6 text-lg font-medium text-[#959595] hover:text-slate-200 hover:cursor-pointer max-sm:text-4xl max-sm:leading-normal max-sm:py-10 ">
                        <Link href="https://maps.app.goo.gl/9G7zqUiAun3R1vbd7"> 📍 AICTE IDEA Lab, LNCT <br /> Raisen Road, Kalchuri Nagar <br />Bhopal, Madhya Pradesh 462022</Link>
@@ -48,7 +48,7 @@ const Footer = () => {
                     </ul>
                 </div>
           </div>
-          <div className="flex justify-between pt-8 pb-4 px-24 text-lg font-medium text-[#959595] max-sm:w-[60rem] max-sm:text-xl max-sm:px-12 max-sm:py-10 max-sm:ms-5 ">
+          <div className="flex justify-between pt-8 pb-4 px-24 text-lg font-medium text-[#959595] max-sm:w-[100vw] max-sm:text-xl max-sm:px-12 max-sm:py-10 max-sm:ms-5 ">
             <p>© 2023 All Rights Reserved.</p>
             <p>Terms & Conditions</p>
           </div>
