@@ -20,7 +20,7 @@ const Page2 = () => {
         <h3 className="text-slate-200 font-mono xl:ms-56 xl:text-lg max-sm:text-2xl  w-[20rem] ms-5 ">Get to Know IDEA Lab</h3>
         <div className="flex ">
             <h1 className="text-[3.4rem] w-[40rem] font-bold font-mono text-white leading-[4rem] xl:ms-56 max-sm:text-[3rem] max-sm:leading-[5.5rem] max-sm:my-9 max-sm:w-[15rem] max-sm:ms-12 ">Innovating the Future with your Ideas</h1>
-            <button className=" w-52 h-14 bg-[#7B8CE5] rounded-full text-white ms-64 text-lg font-mono hover:bg-white hover:text-[#7B8CE5] max-sm:w-[10rem] max-sm:h-28 max-sm:text-xl max-sm:ms-10 max-sm:absolute  max-sm:top-36 ">Discover More</button>  
+            <button className=" w-52 h-14 bg-[#7B8CE5] rounded-full text-white ms-64 text-lg font-mono hover:bg-white hover:text-[#7B8CE5] max-sm:w-[15rem]  max-sm:text-xl max-sm:ms-16 max-sm:absolute  max-sm:top-[202rem] ">Discover More</button>  
         </div>
         <div className="flex place-content-center xl:gap-24 mt-20 max-sm:block max-sm:ms-10  ">
           <AboutComp img="/auto.png" title="Idea Development" text={text1}/>
