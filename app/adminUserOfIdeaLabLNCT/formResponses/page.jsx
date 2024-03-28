@@ -34,8 +34,8 @@ const page = () => {
     })
 
   return (
-    <div className='flex flex-col justify-center items-center'>
-        <h1 className="text-[2rem] font-bold text-white leading-[4rem] pt-16 max-sm:text-[5rem] max-sm:leading-[5.5rem] max-sm:my-9 max-sm:w-[50rem] max-sm:ms-28 ">Form Responses</h1>  
+    <div className='flex flex-col justify-center items-center bg-black max-sm:w-[100vw] '>
+        <h1 className="text-[2rem] font-bold text-white leading-[4rem] xl:pt-16 max-sm:text-[2rem] max-sm:leading-[5.5rem] max-sm:my-9 max-sm:w-[50rem] max-sm:ms-10 max-sm:text-center ">Form Responses</h1>  
         <div className="flex flex-wrap gap-8 justify-center items-center">
             {fetchedFormResponses}
         </div>

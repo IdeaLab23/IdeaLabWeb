@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 
+
 const page = () => {
     const [title, setEventTitle] = React.useState('')
     const [desc, setEventDesc] = React.useState('')
@@ -26,8 +27,8 @@ const page = () => {
         eval(alert("Event created successfully"))
     }
   return (
-    <div className='flex flex-col justify-center items-center'>
-        <h1 className="text-[2rem] font-bold text-white leading-[4rem] pt-16 max-sm:text-[5rem] max-sm:leading-[5.5rem] max-sm:my-9 max-sm:w-[50rem] max-sm:ms-28 ">Create Event</h1>  
+    <div className='flex flex-col justify-center items-center bg-black max-sm:w-[100vw] '>
+        <h1 className="xl:text-[2rem] font-bold text-white leading-[4rem] pt-16 max-sm:text-[3rem] max-sm:leading-[5rem] max-sm:my-9 max-sm:w-[50rem]  max-sm:text-center ">Create Event</h1>  
         <form onSubmit={submitHandler} >
             <div>
                 <label className='text-2xl' htmlFor="title">Event Title</label>

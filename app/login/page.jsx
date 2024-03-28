@@ -46,7 +46,7 @@ const page = () => {
   }
 
   return (
-    <div className='grid place-items-center h-screen'>
+    <div className='grid place-items-center h-screen bg-black'>
         <div className="w-fit h-fit grid place-items-center border-t-4 border-t-green-500 rounded-lg p-5 shadow-lg shadow-slate-700 ">
             <h1 className="text-[2rem] font-bold text-white leading-[4rem]">Login</h1>
             <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-[20rem] text-black ">
