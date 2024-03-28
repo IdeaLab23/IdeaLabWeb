@@ -3,10 +3,10 @@ import Link from "next/link"
 const page = () => {
   return (
     <>
-        <div>
-            <h1 className="text-[2.4rem] w-[40rem] font-bold text-white leading-[4rem] pt-16 ms-40 max-sm:text-[5rem] max-sm:leading-[5.5rem] max-sm:my-9 max-sm:w-[50rem] max-sm:ms-28 ">Admin Settings </h1>       
-            <hr className="mx-auto w-[80%] h-[1.5px] bg-[#373647] border-0 rounded mt-6 max-sm:mt-[47rem] max-sm:w-[200%] max-sm:ms-20 "/>
-            <div className="grid grid-rows-4 grid-flow-col gap-8 justify-items-center mt-14">
+        <div className="bg-black max-sm:w-[100vw] max-sm:h-210">
+            <h1 className="text-[2.4rem]xl:w-[40rem] font-bold text-white leading-[4rem] xl:pt-16 ms-40 max-sm:text-[3rem] max-sm:leading-[5.5rem]  max-sm:w-[30rem] max-sm:ms-5 ">Admin Settings </h1>       
+            <hr className="mx-auto w-[80%] h-[1.5px] bg-[#373647] border-0 rounded mt-6 max-sm:mt-[2rem] max-sm:w-[100vw]  "/>
+            <div className="grid grid-rows-4 grid-flow-col gap-8 justify-items-center xl:mt-14 ">
                 <div className="w-[80%] flex gap-7 justify-center items-center">
                     <div className="w-20 bg-[#1f2127] p-2 rounded-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -20,7 +20,7 @@ const page = () => {
                         <h3 className="text-2xl text-white font-medium">Events</h3>
                         <p className="text-lg font-medium text-[#959595]">Manage your Events</p>
                     </div>
-                    <button type="submit" className="w-36 h-10 bg-[#292C36] rounded-md ms-auto hover:bg-[#393b41]"><Link href={'/adminUserOfIdeaLabLNCT/addEvents'}>Go to Page</Link></button>
+                    <button type="submit" className="w-36 h-10 bg-[#fafbfc] rounded-md ms-auto hover:bg-[#393b41]"><Link href={'/adminUserOfIdeaLabLNCT/addEvents'}>Go to Page</Link></button>
                 </div>
                 <div className="w-[80%] flex gap-7 justify-center items-center">
                     <div className="bg-[#1f2127] p-2 rounded-xl">
@@ -49,7 +49,7 @@ const page = () => {
                         <h3 className="text-2xl text-white font-medium">Form Responses</h3>
                         <p className="text-lg font-medium text-[#959595]">View form responses from users</p>
                     </div>
-                    <button type="submit" className="w-36 h-10 bg-[#292C36] rounded-md ms-auto hover:bg-[#393b41] "><Link href={'/adminUserOfIdeaLabLNCT/formResponses'}>Go to Page</Link></button>
+                    <button type="submit" className="w-36 h-10 bg-[#dddee2] rounded-md ms-auto  max-sm:w-{15rem} max-sm:h-auto  hover:bg-[#393b41] "><Link href={'/adminUserOfIdeaLabLNCT/formResponses'}>Go to Page</Link></button>
                 </div>
                 <div className="w-[80%] flex gap-7 justify-center items-center">
                     <div className="w-20 bg-[#1f2127] p-2 rounded-xl">
@@ -63,7 +63,7 @@ const page = () => {
                         <h3 className="text-2xl text-white font-medium">Images</h3>
                         <p className="text-lg font-medium text-[#959595]">Manage Images</p>
                     </div>
-                    <button type="submit" className="w-36 h-10 bg-[#292C36] rounded-md ms-auto hover:bg-[#393b41] "><Link href={'/Events'}>Go to Page</Link></button>
+                    <button type="submit" className="w-36 h-10 bg-[#fafbfb] rounded-md ms-auto hover:bg-[#393b41] "><Link href={'/Events'}>Go to Page</Link></button>
                 </div>
             </div>
         </div>
