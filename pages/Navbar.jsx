@@ -6,17 +6,16 @@ const Page1 = () => {
   const [isOpen, setIsOpen] =  React.useState(false)
   return (
     <div>
-      <div className="flex items-center pt-12 max-sm:w-[100vw] max-sm:pt-20">
-        <div className="ms-16 absolute w-24 h-24 max-sm:w-[5rem] max-sm:h-[10rem] max-sm:top-10 max-sm:-left-6">
+      <div className="flex items-center pt-12 max-sm:w-[100vw] max-sm:pt-20 max-sm:flex ">
+        <div className="ms-16 absolute w-24 h-24 max-sm:w-[4rem] max-sm:h-[7rem] max-sm:top-10 max-sm:-left-6">
           <Image 
             src="/logo.png"
             alt="logo"
             layout="fill"
             objectFit="cover"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
-        <div className="ms-52 absolute w-48 h-[4.6rem] max-sm:w-[10rem] max-sm:h-[5rem] max-sm:top-16 max-sm:left-4">
+        <div className="ms-52 absolute w-48 h-[4.6rem] max-sm:w-[8rem] max-sm:h-[3rem] max-sm:top-16 max-sm:left-4">
           <Image
             src="/LNCT-Logo.png"
             alt="lnct"
@@ -25,8 +24,7 @@ const Page1 = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
         </div>
-        {/* <h3 className="text-white text-xl ms-48 mt-3 max-sm:text-[2.6rem] max-sm:leading-normal max-sm:ms-60">AICTE IDEA Lab LNCT</h3> */}
-        <div className="block ms-[19rem]   max-sm:mt-[5rem] bg-white xl:hidden">
+        <div className="block ms-[19rem] xl:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center px-3 py-2 rounded text-black-500 hover:text-black-400"
