@@ -6,14 +6,14 @@ const Footer = () => {
         <footer className='bg-black  max-sm:text-center '>
             <div className="flex flex-wrap justify-between pt-16 pb-8 xl:ps-24 max-sm:w-full max-sm:pt-18 ">
                 <div className="w-[20rem] max-sm:w-full  ">
-                    <h3 className="text-2xl text-white font-bold max-sm:text-[2rem] ">Address</h3>
+                    <h3 className="text-2xl text-white font-bold max-sm:text-3xl ">Address</h3>
                     <div className="pt-6 text-lg font-medium text-[#959595] hover:text-slate-200 hover:cursor-pointer max-sm:text-xl max-sm:leading-normal max-sm:py-4 ">
                        <Link href="https://maps.app.goo.gl/9G7zqUiAun3R1vbd7"> 📍AICTE IDEA Lab, LNCT <br /> Raisen Road, Kalchuri Nagar <br />Bhopal, Madhya Pradesh 462022</Link>
                     
                     </div>
                 </div>
                 <div className="w-[20rem] max-sm:w-full ">
-                    <h3 className="text-2xl text-white font-bold max-sm:leading-normal  max-sm:text-[2rem] ">Our Coordinators </h3>
+                    <h3 className="text-2xl text-white font-bold max-sm:leading-normal  max-sm:text-3xl ">Our Coordinators </h3>
                     <ul className="pt-6 text-lg font-medium text-[#959595] max-sm:text-xl max-sm:py-4 max-sm:leading-normal max-sm:px-4 ">
                         <li className='hover:text-slate-200'><Link href="https://in.linkedin.com/in/dr-anand-singh-550488149"><b>Dr. Anand Singh</b>(Coordinator AICTE IDEA Lab, & HOD, Electrical & Electronic Department )</Link></li>
                        <br></br>
@@ -23,7 +23,7 @@ const Footer = () => {
                     </ul>
                 </div>
                     <div className="w-[20rem] max-sm:w-full ">
-                    <h3 className="text-2xl text-white font-bold max-sm:text-[2rem]  ">Quick Links</h3>
+                    <h3 className="text-2xl text-white font-bold max-sm:text-3xl  ">Quick Links</h3>
                     <ul className="pt-6 text-lg font-medium text-[#959595] max-sm:text-xl max-sm:py-4 max-sm:leading-normal ">
                         <li className='hover:text-slate-200'><Link href="/">Home</Link></li>
                         <li className='hover:text-slate-200'><Link href="#aboutUs">About Us</Link></li>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="w-[20rem] max-sm:w-full ">
-                    <h3 className="text-2xl text-white font-bold max-sm:text-[2rem] ">Follow Us</h3>
+                    <h3 className="text-2xl text-white font-bold max-sm:text-3xl ">Follow Us</h3>
                     <ul className="pt-6 text-lg font-medium text-[#959595] hover:cursor-pointer max-sm:text-xl max-sm:py-4 max-sm:leading-normal ">
                     <li className='hover:text-slate-200'><Link href="https://in.linkedin.com/company/aicte-idea-lab-lnct-bhopal">LinkedIn</Link></li>
                     <li className='hover:text-slate-200'><Link href="https://m.facebook.com/p/AICTE-IDEA-Lab-LNCT-Bhopal-100083871655159/">Facebook</Link></li>
@@ -41,7 +41,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="w-[20rem] max-sm:w-full ">
-                    <h3 className="text-2xl text-white font-bold max-sm:text-[2rem] ">Contact Us</h3>
+                    <h3 className="text-2xl text-white font-bold max-sm:text-3xl ">Contact Us</h3>
                     <ul className="pt-6 text-lg font-medium text-[#959595] hover:cursor-pointer max-sm:text-xl max-sm:py-4 max-sm:leading-normal ">
                         <li className='hover:text-slate-200'>Phone</li>
                         <li className='hover:text-slate-200'><Link href="mailto:idealab@lnct.ac.in">Email</Link></li>

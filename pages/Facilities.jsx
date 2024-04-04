@@ -19,7 +19,7 @@ const data=
       </div>
       <h3 className="text-slate-200 font-mono ms-56 text-lg max-sm:ms-6 max-sm:text-2xl ">Our Facilities</h3>
       <div className="flex max-sm:flex max-sm:flex-col max-sm:items-center max-sm:text-center max-sm:w-full ">
-        <h1 className="text-[3rem] font-bold font-mono text-white leading-[4rem] ms-56 max-sm:text-[3rem] max-sm:text-center max-sm:leading-[3.5rem] max-sm:my-9 max-sm:px-6 max-sm:ms-0 ">Our World Class Facilities<br/>and Resources</h1>
+        <h1 className="text-[3rem] font-bold font-mono text-white leading-[4rem] ms-56 max-sm:text-[2.5rem] max-sm:text-center max-sm:leading-[3rem] max-sm:my-9 max-sm:px-6 max-sm:ms-0 ">Our World Class Facilities<br/>and Resources</h1>
         <button className="w-52 h-14 bg-[#7B8CE5] rounded-full text-white xl:ms-64 text-lg font-mono hover:bg-white hover:text-[#7B8CE5] max-sm:w-[15rem] max-sm:text-xl ">Discover More</button>  
       </div>
       <div className="flex justify-center gap-7 my-14 max-sm:flex max-sm:flex-col max-sm:items-center ">

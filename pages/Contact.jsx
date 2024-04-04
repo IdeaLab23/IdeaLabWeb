@@ -32,7 +32,7 @@ const Contact = () => {
   }
   return (
     <div id="contact" className="pt-24 pb-56 text-white bg-black max-sm:pt-32">
-      <div className="z-0 absolute top-[383rem] w-full h-[300px] max-sm:top-[1004rem] max-sm:w-[30rem] ">
+      <div className="z-0 absolute top-[383rem] w-full h-[300px] max-sm:top-[810rem] max-sm:w-[30rem] ">
         <Image 
           src="/Ellipse-BG.png"
           alt="rfe"
