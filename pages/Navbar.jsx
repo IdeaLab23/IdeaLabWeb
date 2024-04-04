@@ -72,36 +72,36 @@ const Page1 = () => {
           </p>
         </div>
       </div>          
-        <div className={`hidden absolute bg-[#151721] max-sm:w-full max-sm:text-white max-sm:font-mono max-sm:text-2xl max-sm:mt-36 max-sm:ps-10 max-sm:py-12 max-sm:${isOpen ? "block" : "hidden"}`}>
-          <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-8">
-            <Link href="/">Home</Link>
-          </p>
-          <hr className="w-[87%]"/>
-          <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-8">
-            <Link href="#aboutUs">About Us</Link>
-          </p>
-          <hr className="w-[87%]"/>
-          <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-8">
-            <Link href="#facilities">Our Facilities</Link>
-          </p>
-          <hr className="w-[87%]"/>
-          <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-8">
-            <Link href="/Gallery">Gallery</Link>
-          </p>
-          <hr className="w-[87%]"/>
-          <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-8">
-            <Link href="/Events">Events</Link>
-          </p>
-          <hr className="w-[87%]"/>
-          <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-8">
-            <Link href="/">Projects</Link>
-          </p>
-          <hr className="w-[87%]"/>
-          <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-8">
-            <Link href="#contact">Contact Us</Link>
-          </p>
-          <hr className="w-[87%]"/>
-        </div>
+      <div className={`hidden absolute bg-[#151721] max-sm:w-full max-sm:text-white max-sm:font-mono max-sm:text-xl max-sm:mt-10 max-sm:ps-10 max-sm:${isOpen ? "block" : "hidden"}`}>
+        <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-6">
+          <Link href="/">Home</Link>
+        </p>
+        <hr className="w-[87%]"/>
+        <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-6">
+          <Link href="#aboutUs">About Us</Link>
+        </p>
+        <hr className="w-[87%]"/>
+        <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-6">
+          <Link href="#facilities">Our Facilities</Link>
+        </p>
+        <hr className="w-[87%]"/>
+        <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-6">
+          <Link href="/Gallery">Gallery</Link>
+        </p>
+        <hr className="w-[87%]"/>
+        <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-6">
+          <Link href="/Events">Events</Link>
+        </p>
+        <hr className="w-[87%]"/>
+        <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-6">
+          <Link href="/">Projects</Link>
+        </p>
+        <hr className="w-[87%]"/>
+        <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-6">
+          <Link href="#contact">Contact Us</Link>
+        </p>
+        <hr className="w-[87%]"/>
+      </div>
     </div>
   ) 
 }

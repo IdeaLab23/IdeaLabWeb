@@ -6,7 +6,7 @@ const Page1 = () => {
   const [play, setPlay] = React.useState(false)
   return (
     <>
-    <div className="-z-10 absolute xl:w-full xl:h-[1120px] w-[100vw] h-[300rem] ">
+    <div className="-z-10 absolute xl:w-full xl:h-[1120px] w-[100vw] h-[140rem] ">
       <Image
         src="/bg.jpg"
         alt="bg"
@@ -22,7 +22,7 @@ const Page1 = () => {
           <p className="text-xl mt-8 mb-5 font-[Comfortaa] tracking-wide max-sm:text-2xl max-sm:leading-normal max-sm:text-center max-sm:mt-10 max-sm:mb-9">Unlock your creative potential at IDEALab. We offer a nurturing space and essential tools to fuel your innovative ideas, empowering you to turn ideas into reality.</p>
           <button className="xl:w-52 xl:h-14 bg-[#7B8CE5] rounded-full xl:text-lg font-mono hover:bg-white hover:text-[#7B8CE5] w-[15rem] h-16 max-sm:ms-14 text-2xl">Discover More</button>
         </div>
-        {/* <div className="xl:mt-14 absolute xl:left-[54rem] xl:w-[490px] xl:h-[560px] w-[20rem] h-[670px] mt-[135rem] left-[4px] right-0">
+        <div className="xl:mt-14 absolute xl:left-[54rem] xl:w-[490px] xl:h-[560px] w-[22rem] h-[670px] mt-[53rem]">
           <Image
             src="/robo.png"
             alt="robo"
@@ -30,12 +30,12 @@ const Page1 = () => {
             objectFit="cover"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw,33vw"
           />
-        </div> */}
-        <button className="text-[3.5rem] absolute top-[19rem] right-[16.5rem] " onClick={() => setPlay(!play)}>▶️</button>
+        </div>
+        <button className="text-[3.5rem] absolute top-[19rem] right-[16.5rem] max-sm:top-[75rem] max-sm:right-[3rem] " onClick={() => setPlay(!play)}>▶️</button>
         <button className={`text-[3.5rem] absolute top-[1rem] left-[49rem] z-10 ${play ? "block" : "hidden"}`} onClick={() => setPlay(!play)} >❌</button>
-        <iframe className={`absolute left-10 top-3 ${play ? "block" : "hidden"}`} width="1000" height="770" src={`${play ? "https://www.youtube.com/embed/k0no4k1sgk8?si=PTJJYh8DcYuAI8UW&modestbranding=1" : ""}`} title="AICTE IdeaLab Tour" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <iframe className={`absolute left-10 top-1 ${play ? "block" : "hidden"}`} width="1000" height="770" src={`${play ? "https://www.youtube.com/embed/k0no4k1sgk8?si=PTJJYh8DcYuAI8UW&modestbranding=1" : ""}`} title="AICTE IdeaLab Tour" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
-      <hr className="mx-auto w-[75%] mt-28 max-sm:mt-[47rem] max-sm:w-[90%] max-sm:ms-1 "/>
+      <hr className="mx-auto w-[75%] mt-28 max-sm:mt-[47rem] max-sm:w-[90%] "/>
     </>
   )
 }
