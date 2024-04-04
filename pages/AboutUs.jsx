@@ -22,7 +22,7 @@ const Page2 = () => {
             <h1 className="text-[3.4rem] xl:w-[40rem] font-bold font-mono text-white leading-[4rem] xl:ms-56 max-sm:text-[3rem] max-sm:leading-[3.5rem] max-sm:my-9 max-sm:px-6 ">Innovating the Future with your Ideas</h1>
             <button className=" w-52 h-14 bg-[#7B8CE5] rounded-full text-white xl:ms-64 text-lg font-mono hover:bg-white hover:text-[#7B8CE5] max-sm:w-[15rem] max-sm:text-xl">Discover More</button>  
         </div>
-        <div className="flex place-content-center xl:gap-24 mt-20 max-sm:block max-sm:ms-10  ">
+        <div className="flex place-content-center xl:gap-24 mt-20 max-sm:block max-sm:px-10 ">
           <AboutComp img="/auto.png" title="Idea Development" text={text1}/>
           <AboutComp img="/pre.png" title="Evaluation" text={text2}/>
           <AboutComp img="/accu.png" title="Application" text={text3}/>
