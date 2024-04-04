@@ -101,6 +101,10 @@ const Page1 = () => {
           <Link href="#contact">Contact Us</Link>
         </p>
         <hr className="w-[87%]"/>
+        <p className="hover:text-[#7686DB] hover:cursor-pointer hover:underline-offset-auto max-sm:py-6">
+          <Link href="/login">Admin</Link>
+        </p>
+        <hr className="w-[87%]"/>
       </div>
     </div>
   ) 
