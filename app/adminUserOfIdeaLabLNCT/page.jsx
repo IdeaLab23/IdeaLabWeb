@@ -1,6 +1,17 @@
+"use client"
 import Link from "next/link"
 
 const page = () => {
+    // worst cheap trick any human can do
+    
+         function verify(){
+            const token = localStorage.getItem('token')
+         
+           if(token === null){
+            window.location.href = '/login'
+        }
+     }
+            verify()
   return (
     <>
         <div className="bg-black max-sm:w-[100vw] max-sm:h-210">

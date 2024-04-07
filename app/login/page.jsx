@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import getUser from '@/app/controllers/getUser'
+import myToken from '@/app/controllers/myToken'
 import bcrypt from 'bcryptjs'
 import { useRouter } from 'next/navigation'
 
@@ -8,9 +9,8 @@ const page = () => {
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
   const [error, setError] = React.useState('')
-
   const router = useRouter()
-
+  
   const handleSubmit = (e) => {
     e.preventDefault()
     if ( !email || !password ) {
@@ -21,19 +21,27 @@ const page = () => {
     }
     const form = e.target
     form.reset()
- 
-    // bcrypt.genSalt(10, function(err, salt) {
-    //   bcrypt.hash(password, salt, function(err, hash) {
-    //       console.log(hash);
-    //   });
-    // });
     
-    const fetchUser = async () => {
-      try {
-        const userData = await getUser()
+    // bcrypt.genSalt(10, function(err, salt) {
+      //   bcrypt.hash(password, salt, function(err, hash) {
+        //       console.log(hash);
+        //   });
+        // });
+        
+        const fetchUser = async () => {
+          try {
+            const userData = await getUser()
+            const token= await myToken()
         if (userData[0].email === email) {
           bcrypt.compare(password, userData[0].password, function(err, res) {
-            res === true ? router.push('/adminUserOfIdeaLabLNCT') : setError('Password is incorrect');
+            if (res===true){
+              // console.log(token)
+              localStorage.setItem('token', token);
+            //  { document.cookie("token=${token}")}
+              router.push('/adminUserOfIdeaLabLNCT')
+            }else{
+              setError('Password is incorrect')
+            }
           });
         } else {
           setError('Email is incorrect');
