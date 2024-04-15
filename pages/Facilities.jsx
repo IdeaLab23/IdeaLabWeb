@@ -12,7 +12,7 @@ const data=
 
   ]
   return (
-    <div id="facilities" className="bg-black pt-14 max-sm:w-fill  ">
+    <div id="facilities" className="bg-black pt-14 max-sm:w-full max-sm:pt-16 ">
       <div className="z-0 xl:absolute right-0 top-[250rem] rotate-180 w-[300px] h-full max-sm:top-[1050rem] max-sm:left-[500px] max-sm:w-[50px] max-sm:h-[10px] max-sm:hidden ">
         <Image 
           src="/Ellipse-6.png"
@@ -22,6 +22,7 @@ const data=
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
+
       <h3 className="text-slate-200 font-mono ms-56 text-lg max-sm:ms-[2rem] max-sm:text-xl ">Our Facilities</h3>
       <div className="flex max-sm:flex max-sm:flex-col max-sm:items-center max-sm:text-center max-sm:w-[22rem] ">
         <h1 className="text-[3rem] font-bold font-mono text-white leading-[4rem] ms-56 max-sm:text-3xl max-sm:leading-[3rem] max-sm:my-10 max-sm:ms-3 ">Our World Class Facilities<br/>and Resources</h1>
@@ -36,6 +37,7 @@ const data=
         <Facilities_comp title="Digitial Microscope " description={data[3]} img_path="/safety.png"/>
         <Facilities_comp title="Laser Cutter" description={data[4]} img_path="/drill.png"/>
         <Facilities_comp title="PCB Prototype Machine" description={data[5]} img_path="/pre.png"/>
+    
       </div> 
     </div>
   )
