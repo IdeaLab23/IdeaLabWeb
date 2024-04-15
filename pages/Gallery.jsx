@@ -16,11 +16,11 @@ const Gallery = () => {
         <a className="p-14 text-6xl hover:text-orange-500 max-sm:hidden "href="#first" > ↓</a>
       </div >  
       <div className="flex  bg-[#111827] max-sm:mt-5 max-sm:flex-col"  id="first">
-        <Gallery_Card image="/idea_g/demon.jpeg" title="Demonstrations" />  
-        <Gallery_Card image="/idea_g/workshop_f.jpeg " title="Workshops"/>
+        <Gallery_Card image="/idea_g/1.jpeg" title="Demonstrations" />  
+        <Gallery_Card image="/idea_g/2.jpeg " title="Workshops"/>
       </div> 
       <div className="flex bg-[#111827] max-sm:mt-5 max-sm:flex-col"> 
-        <Gallery_Card image="/idea_g/memories.jpeg" title="Memories"/>
+        <Gallery_Card image="/idea_g/13.jpeg" title="Memories"/>
         <Gallery_Card image="/idea_g/events_logo/3dtech.JPG" title="Posters"/>  
       </div>
     </>
