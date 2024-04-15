@@ -31,9 +31,11 @@ const Page1 = () => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw,33vw"
           />
         </div>
-        <button className="text-[3.5rem] absolute top-[19rem] right-[16.5rem] max-sm:top-[75rem] max-sm:right-[3rem] " onClick={() => setPlay(!play)}>▶️</button>
+
+        <button className="text-[3.5rem] absolute top-[25rem] right-[11rem] " onClick={() => setPlay(!play)}>▶️</button>
         <button className={`text-[3.5rem] absolute top-[1rem] left-[49rem] z-10 ${play ? "block" : "hidden"}`} onClick={() => setPlay(!play)} >❌</button>
-        <iframe className={`absolute left-10 top-1 ${play ? "block" : "hidden"}`} width="1000" height="770" src={`${play ? "https://www.youtube.com/embed/k0no4k1sgk8?si=PTJJYh8DcYuAI8UW&modestbranding=1" : ""}`} title="AICTE IdeaLab Tour" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <iframe className={`absolute left-10 top-3 ${play ? "block" : "hidden"}`} width="1000" height="770" src={`${play ? "https://www.youtube.com/embed/cDKH_DkUNzs?si=bcLOLGL_35c4gWu4"  : ""}`} title="AICTE IdeaLab Tour" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+
       </div>
       <hr className="mx-auto w-[75%] mt-28 max-sm:mt-[47rem] max-sm:w-[90%] "/>
     </>

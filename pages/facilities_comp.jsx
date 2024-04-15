@@ -9,8 +9,11 @@ const Services_comp = (props) => {
       width="70px"
       height="70px"
     />
-    <span className="font-bold py-2 block text-2xl max-sm:text-3xl ">{props.title}</span>
-    <span className=" py-2 block text-lg max-sm:text-[1.3rem] max-sm:text-center max-sm:leading-normal ">{props.description}</span>
+
+    <span className="font-bold py-2 block text-2xl max-sm:text-3xl max-sm:py-2  ">{props.title}</span>
+    <span className=" py-2 block text-lg max-sm:text-2xl max-sm:text-center max-sm:leading-normal max-sm:my-6 ">{props.description}</span>
+    <a className="font-bold text-[#7B86E5] max-sm:text-3xl max-sm:p-2 " href="https://idealnet.aicte-india.org/assets/data/scheme_doc.pdf" target="_blank">Learn More</a>
+
   </div>
   )
 }
