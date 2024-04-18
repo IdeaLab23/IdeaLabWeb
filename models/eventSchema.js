@@ -14,7 +14,8 @@ const eventSchema = new mongoose.Schema ({
         type: String,
         required: [true, "Time is required"],
     },
-    seats: Number
+    seats: Number,
+    link: String,
 },
 {
     timestamps: true

@@ -17,6 +17,7 @@ const Events = () => {
     }
     fetchEvents()
   }, [])
+  console.log(events);  
   const fetchedEvents = events.map( event => {
     return (
       <EventsCardComp 
@@ -26,12 +27,13 @@ const Events = () => {
         date={event.date}
         time={event.time}
         seats={event.seats}
+        link={event.link}
       />
     )
   })
 
   return ( 
-    <div className="bg-gray-900 text-white h-max w-full ">   
+    <div className="bg-gray-900 text-white min-h-screen w-full ">   
       <div className='flex justify-between items-center max-sm:flex-wrap max-sm:w-[25rem] '>
         <h1 className="text-4xl font-mono p-7">Upcoming Events</h1>
         <button className='border-2 rounded w-24 bg-[#111827] p-1 me-8 hover:bg-indigo-900 max-sm:ms-[10rem]'>
@@ -39,10 +41,6 @@ const Events = () => {
         </button> 
       </div>
       <div className='flex flex-wrap'>
-          {fetchedEvents}
-      </div>
-      <h1 className="text-4xl font-mono p-7">Past Events</h1>
-      <div className='flex flex-wrap max-sm:flex-wrap'>
           {fetchedEvents}
       </div>
     </div>
