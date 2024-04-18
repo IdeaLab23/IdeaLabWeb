@@ -1,17 +1,23 @@
-"use client"
 import Link from "next/link"
+import { GetServerSideProps } from 'next';
 
+import Cookies from 'universal-cookie';
 const page = () => {
     // worst cheap trick any human can do
-    
-         function verify(){
-            const token = localStorage.getItem('token')
+    /*
+    function verify(){
+        const cookies = new Cookies();
+        const cookieValue = cookies.get('token');
+        console.log(cookieValue)
+        
+            //const token = localStorage.getItem('token')
          
-           if(token === null){
-            window.location.href = '/login'
-        }
+           //if(token === null){
+           // window.location.href = '/login'
+       // }
      }
-            verify()
+            verify()*/
+    
   return (
     <>
         <div className="bg-black max-sm:w-[100vw] max-sm:h-210">

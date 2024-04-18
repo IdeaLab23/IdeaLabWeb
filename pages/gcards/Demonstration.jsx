@@ -3,7 +3,7 @@ import "yet-another-react-lightbox/styles.css";
 
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
-import NextJsImage from "./NextJsImage";
+/*import NextJsImage from "./NextJsImage";*/
 
  function Demon() {
   const [index, setIndex] = React.useState(-1);
@@ -32,7 +32,9 @@ import NextJsImage from "./NextJsImage";
         slides={ slus}
         open={index >= 0}
         close={() => setIndex(-1)}
-        render={NextJsImage}
+        /*render={NextJsImage}*/
+       /* render={{ slide: NextJsImage }}*/
+
       />
     </>
   );

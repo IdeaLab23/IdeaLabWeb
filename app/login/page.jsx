@@ -4,13 +4,16 @@ import getUser from '@/app/controllers/getUser'
 import myToken from '@/app/controllers/myToken'
 import bcrypt from 'bcryptjs'
 import { useRouter } from 'next/navigation'
+import Cookies from "universal-cookie";
+
 
 const page = () => {
   const [email, setEmail] = React.useState('')
   const [password, setPassword] = React.useState('')
   const [error, setError] = React.useState('')
   const router = useRouter()
-  
+  const cookies = new Cookies();
+
   const handleSubmit = (e) => {
     e.preventDefault()
     if ( !email || !password ) {
@@ -36,8 +39,10 @@ const page = () => {
           bcrypt.compare(password, userData[0].password, function(err, res) {
             if (res===true){
               // console.log(token)
-              localStorage.setItem('token', token);
-            //  { document.cookie("token=${token}")}
+              /*localStorage.setItem('token', token);*/
+          //   { document.cookie("token=${token}")}
+            cookies.set('token', token, { path: '/' })
+
               router.push('/adminUserOfIdeaLabLNCT')
             }else{
               setError('Password is incorrect')
