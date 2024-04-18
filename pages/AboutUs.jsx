@@ -16,13 +16,13 @@ const Page2 = () => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
-      <div className="xl:mt-44  mt-28 max-sm:text-center">
-        <h3 className="text-slate-200 font-mono xl:ms-56 xl:text-lg max-sm:text-2xl  w-[20rem] ms-5 ">Get to Know IDEA Lab</h3>
-        <div className="flex ">
-            <h1 className="text-[3.4rem] w-[40rem] font-bold font-mono text-white leading-[4rem] xl:ms-56 max-sm:text-[3rem] max-sm:leading-[5.5rem] max-sm:my-9 max-sm:w-[15rem] max-sm:ms-12 ">Innovating the Future with your Ideas</h1>
-            <button className=" w-52 h-14 bg-[#7B8CE5] rounded-full text-white ms-64 text-lg font-mono hover:bg-white hover:text-[#7B8CE5] max-sm:w-[15rem]  max-sm:text-xl max-sm:ms-16 max-sm:absolute  max-sm:top-[202rem] ">Discover More</button>  
+      <div className="xl:mt-44 mt-28 max-sm:text-center">
+        <h3 className="text-slate-200 font-mono xl:ms-56 xl:text-lg max-sm:text-2xl w-[22rem]">Get to Know IDEA Lab</h3>
+        <div className="xl:flex items-center justify-items-center">
+            <h1 className="text-[3.4rem] xl:w-[40rem] font-bold font-mono text-white leading-[4rem] xl:ms-56 max-sm:text-[2.5rem] max-sm:leading-[3rem] max-sm:my-9 max-sm:px-6 ">Innovating the Future with your Ideas</h1>
+            <button className=" w-52 h-14 bg-[#7B8CE5] rounded-full text-white xl:ms-64 text-lg font-mono hover:bg-white hover:text-[#7B8CE5] max-sm:w-[15rem] max-sm:text-xl">Discover More</button>  
         </div>
-        <div className="flex place-content-center xl:gap-24 mt-20 max-sm:block max-sm:ms-10  ">
+        <div className="flex place-content-center xl:gap-24 mt-20 max-sm:block max-sm:px-10 ">
           <AboutComp img="/auto.png" title="Idea Development" text={text1}/>
           <AboutComp img="/pre.png" title="Evaluation" text={text2}/>
           <AboutComp img="/accu.png" title="Application" text={text3}/>
