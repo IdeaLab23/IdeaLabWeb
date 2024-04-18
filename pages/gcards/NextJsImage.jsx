@@ -4,6 +4,7 @@ import {
   isImageSlide,
   useLightboxProps,
 } from "yet-another-react-lightbox";
+import { LightboxPropsContext } from 'yet-another-react-lightbox';
 
 function isNextJsImage(slide) {
   return (
@@ -14,6 +15,8 @@ function isNextJsImage(slide) {
 }
 
 export default function NextJsImage({ slide, rect }) {
+  
+<LightboxPropsContext.Provider > 
   const { imageFit } = useLightboxProps().carousel;
   const cover = isImageSlide(slide) && isImageFitCover(slide, imageFit);
 
@@ -21,17 +24,20 @@ export default function NextJsImage({ slide, rect }) {
 
   const width = !cover
     ? Math.round(
-        Math.min(rect.width, (rect.height / slide.height) * slide.width),
+      Math.min(rect.width, (rect.height / slide.height) * slide.width),
       )
     : rect.width;
 
   const height = !cover
     ? Math.round(
-        Math.min(rect.height, (rect.width / slide.width) * slide.height),
+      Math.min(rect.height, (rect.width / slide.width) * slide.height),
       )
     : rect.height;
+    </LightboxPropsContext.Provider>
+
 
   return (
+
     <div style={{ position: "relative", width, height }}>
       <Image
         fill
@@ -43,6 +49,7 @@ export default function NextJsImage({ slide, rect }) {
         style={{ objectFit: cover ? "cover" : "contain" }}
         sizes={`${Math.ceil((width / window.innerWidth) * 100)}vw`}
       />
+
     </div>
   );
 }

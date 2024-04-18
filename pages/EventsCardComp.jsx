@@ -1,4 +1,6 @@
+// "use client"
 import Image from "next/legacy/image"
+import Link from "next/link"
 const EventsCardComp = (props) => {
   return (
     <>
@@ -19,7 +21,7 @@ const EventsCardComp = (props) => {
         />
         <div className="flex gap-5 font-bold xl:p-3 p-5 text-lg">
           <span>{props.seats}</span>
-          <button className='border-2 rounded w-24 bg-[#111827] xl:p-1  max-sm: hover:bg-indigo-900'>Sign Up</button>
+          <button className='border-2 rounded w-24 bg-[#111827] xl:p-1 max-sm: hover:bg-indigo-900'><Link href={props.link || ''}> Sign Up </Link></button>
         </div>
       </div>
     </div>

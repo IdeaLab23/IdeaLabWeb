@@ -32,7 +32,7 @@ const Page1 = () => {
           />
         </div>
 
-        <button className="text-[3.5rem] absolute top-[25rem] right-[11rem] " onClick={() => setPlay(!play)}>▶️</button>
+        <button className="text-[3.5rem] absolute top-[25rem] right-[11rem]   max-sm:hidden" onClick={() => setPlay(!play)}>▶️</button>
         <button className={`text-[3.5rem] absolute top-[1rem] left-[49rem] z-10 ${play ? "block" : "hidden"}`} onClick={() => setPlay(!play)} >❌</button>
         <iframe className={`absolute left-10 top-3 ${play ? "block" : "hidden"}`} width="1000" height="770" src={`${play ? "https://www.youtube.com/embed/cDKH_DkUNzs?si=bcLOLGL_35c4gWu4"  : ""}`} title="AICTE IdeaLab Tour" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
 

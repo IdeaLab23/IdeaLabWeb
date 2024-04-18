@@ -10,7 +10,7 @@ export async function GET() {
     return NextResponse.json(eventsData)
   } catch (error) {
     return NextResponse.json({
-      message: "Failed to create event",
+      message: "Failed to get event",
       error: error
     },
     {
@@ -22,13 +22,14 @@ export async function GET() {
 //POST new event
 export async function POST(request) {
   try {
-    const { title, desc, date, time, seats } = await request.json()
+    const { title, desc, date, time, seats, link } = await request.json()
     const newEvent = new Event({
       title,
       desc,
       date,
       time,
-      seats
+      seats,
+      link
     })
     await connectDB()
     await Event.create(newEvent)
