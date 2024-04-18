@@ -51,20 +51,6 @@ const page = () => {
                     </div>
                     <button type="submit" className="w-36 h-10 bg-[#292C36] rounded-md xl:ms-auto  hover:bg-[#393b41] "><Link href={'/adminUserOfIdeaLabLNCT/formResponses'}>Go to Page</Link></button>
                 </div>
-                <div className="w-[80%] flex gap-7 justify-center items-center max-sm:w-full max-sm:gap-3 max-sm:flex-col ">
-                    <div className="w-20 bg-[#1f2127] p-2 rounded-xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                            <polyline points="21 15 16 10 5 21"></polyline>
-                        </svg>
-                    </div>
-                    <div className="max-sm:text-center">
-                        <h3 className="text-2xl text-white font-medium">Images</h3>
-                        <p className="text-lg font-medium text-[#959595]">Manage Images</p>
-                    </div>
-                    <button type="submit" className="w-36 h-10 bg-[#292C36] rounded-md xl:ms-auto hover:bg-[#393b41]"><Link href={'/Events'}>Go to Page</Link></button>
-                </div>
             </div>
         </div>
     </>
